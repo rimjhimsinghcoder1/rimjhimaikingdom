@@ -913,6 +913,20 @@ h6 {
     height: 100%;
     object-fit: cover !important;   /* crop for perfect visuals */
 }
+/* ===== FINAL BANNER FIX — SMALLER BUT NOT CROPPED ===== */
+
+.hero-banner {
+    max-height: 220px !important;   /* banner ki height control */
+    overflow: visible !important;    /* image ko crop mat karo */
+}
+
+.banner-image {
+    width: 100%;
+    height: auto !important;         /* natural proportions */
+    object-fit: contain !important;  /* full image visible */
+    display: block;
+}
+
 
 
 
