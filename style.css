@@ -163,42 +163,49 @@ li {
    HERO SECTION
    ============================================ */
 
+/* ============================================
+   HERO SECTION (FIXED VERSION)
+   ============================================ */
+
 .hero {
     margin-top: 70px;
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
     color: white;
     padding: 0;
+    text-align: center;
 }
 
+/* Banner Image Fix */
 .hero-banner {
     width: 100%;
-    max-height: 250px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .banner-image {
     width: 100%;
     height: auto;
+    object-fit: contain; /* ensures full banner visible */
     display: block;
-    object-fit: cover;
 }
 
+/* Hero Text Section */
 .hero-content {
-    padding: 4rem 2rem;
-    text-align: center;
+    padding: 3rem 2rem 4rem 2rem;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 0.95rem; /* smaller */
+    letter-spacing: 0.5px;
+    color: #c8d8e4;
+    font-weight: 500;
     margin-bottom: 0.5rem;
-    color: #a8c5d9;
 }
 
 .hero-tagline {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #e8f0f5;
     margin-bottom: 2rem;
-    font-weight: 300;
-    color: #e0e8ed;
 }
 
 .hero-links {
@@ -827,4 +834,5 @@ li {
     .section {
         page-break-inside: avoid;
     }
+
 }
