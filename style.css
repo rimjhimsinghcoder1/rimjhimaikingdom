@@ -388,8 +388,8 @@ li {
 }
 
 .philosophy {
-    background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
-    color: white;
+    background: #f4f7fb;
+    color: #1a2332;
     padding: 2rem 2.5rem;
     border-left: 4px solid #7eb3d6;
     border-radius: 8px;
@@ -406,7 +406,7 @@ li {
 .current-status {
     font-weight: 500;
     color: #1a2332;
-}
+} ye pura. hata dun?
 
 /* ============================================
    IMPACT SECTION
@@ -836,3 +836,4 @@ li {
     }
 
 }
+
