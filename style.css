@@ -837,4 +837,42 @@ li {
 
 }
 
+/* ====== UI Compact Fix (Global Overrides) ====== */
+
+/* Reduce worldwide padding */
+.section {
+    padding: 3rem 0 !important;
+}
+
+/* Reduce root font-size for cleaner layout */
+html {
+    font-size: 15px !important;
+}
+
+/* Reduce oversized card spacing */
+.impact-card,
+.skill-category,
+.expertise,
+.education-item,
+.cert-category,
+.projects-note,
+.manifesto {
+    padding: 1.5rem !important;
+}
+
+/* Founder spacing fix */
+.founder-content {
+    gap: 2rem !important;
+}
+
+.philosophy {
+    padding: 1.5rem 2rem !important;
+}
+
+/* Grid gaps smaller */
+.impact-grid,
+.skills-grid {
+    gap: 1.5rem !important;
+}
+
 
