@@ -927,6 +927,80 @@ h6 {
     display: block;
 }
 
+/* ============================================
+   FINAL HERO BANNER + TEXT OVERLAP FIX
+   ============================================ */
+
+/* 1. HERO SECTION CLEAN RESET */
+.hero {
+    margin-top: 80px !important;   /* header ke niche proper spacing */
+    padding: 0 !important;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* 2. BANNER HEIGHT + CLEAN LOOK */
+.hero-banner {
+    width: 100%;
+    height: 260px !important;      /* banner strip height */
+    overflow: hidden !important;   /* extra image crop */
+    position: relative;
+}
+
+/* 3. IMAGE PERFECT FIT */
+.banner-image {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover !important;  /* clean crop like LinkedIn/Portfolio */
+    display: block;
+}
+
+/* 4. TEXT ALWAYS BELOW IMAGE – NEVER OVERLAPPING */
+.hero-content {
+    margin-top: 25px !important;   /* banner ke neeche space */
+    padding: 0 1rem 3rem 1rem;
+    position: relative;
+    z-index: 5;
+}
+
+/* 5. HERO TITLE & TAGLINE NORMAL SIZE (global override fix) */
+.hero-subtitle {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+    font-size: 1.6rem !important;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* 6. Buttons fix */
+.hero-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 7. Responsive Fix for Mobile */
+@media (max-width: 640px) {
+
+    .hero-banner {
+        height: 160px !important;
+    }
+
+    .hero-content {
+        margin-top: 15px !important;
+    }
+
+    .hero-tagline {
+        font-size: 1.4rem !important;
+    }
+}
+
 
 
 
