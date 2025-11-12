@@ -1,4 +1,4 @@
-* ============================================
+/* ============================================
    RIMJHIM AI KINGDOM - PORTFOLIO STYLES
    Professional, Clean, Responsive Design
    ============================================ */
@@ -173,7 +173,7 @@ li {
 
 .hero-banner {
     width: 100%;
-    height: 280px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -181,8 +181,10 @@ li {
 .banner-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
+    background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
 }
 
 .hero-content {
@@ -735,7 +737,7 @@ li {
     }
     
     .hero-banner {
-        height: 200px;
+        height: 300px;
     }
 }
 
@@ -754,7 +756,7 @@ li {
     }
     
     .hero-banner {
-        height: 160px;
+        height: 220px;
     }
     
     .hero-content {
@@ -812,6 +814,8 @@ li {
         page-break-inside: avoid;
     }
 }
+
+
 
 
 
