@@ -1100,6 +1100,20 @@ li {
     display: none;
 }
 
+/* --- UNIVERSAL IMAGE SIZE FIX --- */
+.section-image,
+.article-card img,
+.github-embed-container img,
+.pdf-embed-container img {
+    width: 100%;
+    max-width: 650px;      /* Adjust this size you want */
+    height: 350px;         /* Fixed aesthetic height */
+    object-fit: cover;     /* Crops nicely */
+    border-radius: 12px;
+    display: block;
+    margin: 1.5rem auto;
+}
+
 
 
 
