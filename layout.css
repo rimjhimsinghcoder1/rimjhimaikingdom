@@ -1,4 +1,4 @@
-* ============================================
+/* ============================================
    RIMJHIM AI KINGDOM - PORTFOLIO STYLES
    Professional, Clean, Responsive Design
    ============================================ */
@@ -1100,43 +1100,52 @@ li {
     display: none;
 }
 
-/* --- UNIVERSAL IMAGE SIZE FIX --- */
-.section-image,
-.article-card img,
-.github-embed-container img,
-.pdf-embed-container img {
-    width: 100%;
-    max-width: 650px;      /* Adjust this size you want */
-    height: 350px;         /* Fixed aesthetic height */
-    object-fit: cover;     /* Crops nicely */
-    border-radius: 12px;
-    display: block;
-    margin: 1.5rem auto;
+/* ============================================
+   BUTTON FIXES FOR VISIBILITY
+   ============================================ */
+
+/* Fix for guide section buttons - make secondary button visible */
+.guide-section .btn-secondary {
+    background: white;
+    color: #1a2332;
+    border: 2px solid #1a2332;
 }
 
-/* ---- MOBILE BUTTON + SPACING FIX ---- */
-@media (max-width: 640px) {
-    .hero-links .btn,
-    .contact-link,
-    .btn-primary,
-    .btn-secondary {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0.5rem 0;
-        border-radius: 10px !important;
-    }
+.guide-section .btn-secondary:hover {
+    background: #1a2332;
+    color: white;
+}
 
-    .container,
-    .hero-content {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
+/* ============================================
+   MOBILE NAVIGATION FIX
+   ============================================ */
 
-    body, html {
-        overflow-x: hidden !important;
+@media (max-width: 968px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    /* Add hamburger menu button if needed */
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #1a2332;
     }
 }
 
+/* Better mobile navigation */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo a {
+        font-size: 1.1rem;
+    }
+}
 
 
 
