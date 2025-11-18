@@ -1,4 +1,4 @@
-/* ============================================
+* ============================================
    RIMJHIM AI KINGDOM - PORTFOLIO STYLES
    Professional, Clean, Responsive Design
    ============================================ */
@@ -1063,17 +1063,19 @@ li {
 
 .section-image {
     width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     display: block;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
 }
 
 .image-link {
     display: block;
     text-decoration: none;
+    text-align: center;
 }
 
 .image-link:hover .section-image {
@@ -1097,3 +1099,9 @@ li {
 .pdf-iframe {
     display: none;
 }
+
+
+
+
+
+
