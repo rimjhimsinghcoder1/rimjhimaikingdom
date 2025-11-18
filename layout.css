@@ -1056,3 +1056,44 @@ li {
 .link-icon {
     display: none;
 }
+
+/* ============================================
+   IMAGE STYLES FOR SECTIONS
+   ============================================ */
+
+.section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: block;
+    margin: 1.5rem 0;
+}
+
+.image-link {
+    display: block;
+    text-decoration: none;
+}
+
+.image-link:hover .section-image {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.article-card .section-image,
+.github-embed-container .section-image,
+.pdf-embed-container .section-image {
+    cursor: pointer;
+}
+
+/* Update existing styles */
+.article-embed {
+    margin: 1.5rem 0;
+}
+
+.github-iframe,
+.medium-iframe,
+.pdf-iframe {
+    display: none;
+}
