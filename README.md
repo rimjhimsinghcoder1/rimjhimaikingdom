@@ -1,6 +1,6 @@
 
 
-# **RIMJHIM AI KINGDOM - Knowledge Hub**
+# **RIMJHIM AI KINGDOM - an AI Knowledge Hub**
 
 **Live Site:** [rimjhimaikingdom.com](https://rimjhimaikingdom.com)  
 **GitHub:** [github.com/rimjhimsinghcoder1/rimjhimaikingdom](https://github.com/rimjhimsinghcoder1/rimjhimaikingdom)
