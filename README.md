@@ -58,7 +58,6 @@ The website is deployed on **GitHub Pages** with full **public code repository**
 AI/ML Engineer | MSc Data Science, University of Warwick  
 5+ years experience in LLM optimization, RAG systems, AI agents
 
-📧 [rimjhimsingh.professional@gmail.com](mailto:rimjhimsingh.professional@gmail.com)  
 🔗 [LinkedIn](https://linkedin.com/in/rimjhim-ri)  
 💻 [GitHub](https://github.com/rimjhimsinghcoder1)
 
