@@ -12,7 +12,7 @@ This portfolio showcases technical expertise, project achievements, and innovati
 
 ---
 
-## 🌐 Live Website
+## Live Website
 
 **Visit:** [rimjhimaikingdom.com](https://rimjhimaikingdom.com)
 
@@ -20,7 +20,7 @@ This portfolio showcases technical expertise, project achievements, and innovati
 
 ---
 
-## 🎯 Features
+## Features
 
 - **Responsive Design** - Optimized for desktop, tablet, and mobile
 - **Professional Layout** - Clean, modern, and accessible
@@ -30,7 +30,7 @@ This portfolio showcases technical expertise, project achievements, and innovati
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling with Flexbox & Grid
@@ -40,7 +40,7 @@ This portfolio showcases technical expertise, project achievements, and innovati
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 rimjhimaikingdom/
 │
@@ -56,7 +56,7 @@ rimjhimaikingdom/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Local Development
 
@@ -83,7 +83,7 @@ rimjhimaikingdom/
 
 ---
 
-## 📸 Image Setup
+## Image Setup
 
 ### Required Images
 
@@ -110,7 +110,7 @@ Place these images in the `images/` folder:
 
 ---
 
-## 🌍 Deployment (GitHub Pages)
+## Deployment (GitHub Pages)
 
 ### Step 1: Upload Files to GitHub
 
@@ -186,7 +186,7 @@ Light Gray: #f8f9fa
 
 ---
 
-## ⚡ Performance
+## Performance
 
 - **Lighthouse Score:** 95+ (Performance, Accessibility, SEO)
 - **Load Time:** < 2 seconds (with optimized images)
@@ -195,7 +195,7 @@ Light Gray: #f8f9fa
 
 ---
 
-## 📄 License
+## License
 
 This portfolio website is © 2024-2025 Rimjhim Singh. All rights reserved.
 
@@ -206,7 +206,7 @@ This portfolio website is © 2024-2025 Rimjhim Singh. All rights reserved.
 
 ---
 
-## 🤝 Connect
+## Connect
 
 - **Personal LinkedIn:** [linkedin.com/in/rimjhim-ri](https://www.linkedin.com/in/rimjhim-ri)
 - **Company LinkedIn:** [linkedin.com/company/rimjhim-ai-kingdom](https://www.linkedin.com/company/rimjhim-ai-kingdom)
@@ -215,9 +215,8 @@ This portfolio website is © 2024-2025 Rimjhim Singh. All rights reserved.
 
 ---
 
-## 📝 Notes
+## Notes
 
-### This Portfolio Website as Evidence
 
 This website itself serves as a project demonstrating:
 - **Front-end Development** - HTML5, CSS3
@@ -226,7 +225,6 @@ This website itself serves as a project demonstrating:
 - **DevOps** - GitHub Pages deployment
 - **DNS Management** - Custom domain configuration
 
-Suitable for inclusion in Global Talent Visa applications as supporting technical evidence.
 
 ---
 
@@ -243,5 +241,6 @@ Suitable for inclusion in Global Talent Visa applications as supporting technica
 **Status:** Live & Active
 
 ---
+
 
 *Built by Rimjhim Singh | RIMJHIM AI KINGDOM*
