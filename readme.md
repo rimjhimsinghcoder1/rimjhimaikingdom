@@ -178,11 +178,11 @@ Light Gray: #f8f9fa
 
 ## 📱 Browser Support
 
-- ✅ Chrome (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Edge (latest)
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ---
 
@@ -244,3 +244,4 @@ This website itself serves as a project demonstrating:
 
 
 *Built by Rimjhim Singh | RIMJHIM AI KINGDOM*
+
