@@ -235,9 +235,8 @@ This website itself serves as a project demonstrating:
 - **"Where Knowledge Flows Like Raindrops"** ☔
 
 ---
-
-**Last Updated:** January 2025  
-**Version:** 1.0.0  
+ 
+**Version:** 2.0.0  
 **Status:** Live & Active
 
 ---
@@ -260,6 +259,7 @@ AI/ML Engineer | MSc Data Science, University of Warwick
 
 
 *Built by Rimjhim Singh (Rémy)| RIMJHIM AI KINGDOM*
+
 
 
 
