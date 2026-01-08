@@ -54,7 +54,7 @@ The website is deployed on **GitHub Pages** with full **public code repository**
 
 ## **Author**
 
-**Rimjhim (Rémy) Singh**  
+**Rimjhim Singh (Rémy)**  
 AI/ML Engineer | MSc Data Science, University of Warwick  
 5+ years experience in LLM optimization, RAG systems, AI agents
 
