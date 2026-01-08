@@ -241,8 +241,25 @@ This website itself serves as a project demonstrating:
 **Status:** Live & Active
 
 ---
+## **Author**
+
+**Rimjhim Singh (Rémy)**  
+AI/ML Engineer | MSc Data Science, University of Warwick  
+5+ years experience in LLM optimization, RAG systems, AI agents
+
+🔗 [LinkedIn](https://linkedin.com/in/rimjhim-ri)  
+💻 [GitHub](https://github.com/rimjhimsinghcoder1)
+
+---
+
+## **License**
+
+© 2024-2025 RIMJHIM AI KINGDOM. 
+
+---
 
 
-*Built by Rimjhim Singh | RIMJHIM AI KINGDOM*
+*Built by Rimjhim Singh (Rémy)| RIMJHIM AI KINGDOM*
+
 
 
