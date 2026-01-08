@@ -1,4 +1,6 @@
-# RIMJHIM AI KINGDOM
+# RIMJHIM AI KINGDOM - an AI Knowledge Hub
+Website- https://rimjhimaikingdom.com/
+
 
 **"Where Knowledge Flows Like Raindrops" ☔**
 
@@ -259,6 +261,7 @@ AI/ML Engineer | MSc Data Science, University of Warwick
 
 
 *Built by Rimjhim Singh (Rémy)| RIMJHIM AI KINGDOM*
+
 
 
 
