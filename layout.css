@@ -2,22 +2,22 @@
    RIMJHIM AI KINGDOM - PORTFOLIO STYLES
    Professional, Clean, Responsive Design
    ============================================ */
-
+ 
 /* ============================================
    RESET & BASE STYLES
    ============================================ */
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
-
+ 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -25,11 +25,11 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
 }
-
+ 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
-
+ 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -37,66 +37,66 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     color: #1a2332;
 }
-
+ 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1.1rem; }
 h6 { font-size: 1rem; }
-
+ 
 p {
     margin-bottom: 1rem;
     line-height: 1.7;
 }
-
+ 
 a {
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease;
 }
-
+ 
 ul, ol {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
 }
-
+ 
 li {
     margin-bottom: 0.5rem;
 }
-
+ 
 /* ============================================
    CONTAINER & LAYOUT
    ============================================ */
-
+ 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
-
+ 
 .section {
     padding: 4rem 0;
 }
-
+ 
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #1a2332;
 }
-
+ 
 .section-subtitle {
     text-align: center;
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 2.5rem;
 }
-
+ 
 /* ============================================
    HEADER & NAVIGATION
    ============================================ */
-
+ 
 .header {
     position: fixed;
     top: 0;
@@ -107,7 +107,7 @@ li {
     z-index: 1000;
     padding: 1rem 0;
 }
-
+ 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -116,7 +116,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-
+ 
 .logo a {
     font-size: 1.3rem;
     font-weight: 800;
@@ -124,14 +124,14 @@ li {
     color: #1a2332;
     letter-spacing: -0.5px;
 }
-
+ 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
     margin: 0;
 }
-
+ 
 .nav-menu li a {
     color: #333;
     font-weight: 500;
@@ -139,11 +139,11 @@ li {
     padding: 0.5rem 0;
     position: relative;
 }
-
+ 
 .nav-menu li a:hover {
     color: #7eb3d6;
 }
-
+ 
 .nav-menu li a::after {
     content: '';
     position: absolute;
@@ -154,15 +154,15 @@ li {
     background: #7eb3d6;
     transition: width 0.3s ease;
 }
-
+ 
 .nav-menu li a:hover::after {
     width: 100%;
 }
-
+ 
 /* ============================================
    HERO SECTION (FIXED - NO OVERLAP)
    ============================================ */
-
+ 
 .hero {
     margin-top: 70px;
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
@@ -170,25 +170,28 @@ li {
     text-align: center;
     padding: 0;
 }
-
+ 
 .hero-banner {
     width: 100%;
     overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
 }
-
+ 
 .banner-image {
     width: 100%;
     height: auto;
     display: block;
-    image-rendering: auto; /* Maintain smooth quality */
+    image-rendering: auto;
+    border-radius: 8px;
 }
-
-
+ 
+ 
 .hero-content {
     padding: 3rem 2rem 4rem 2rem;
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
 }
-
+ 
 .hero-subtitle {
     font-size: 1rem;
     letter-spacing: 0.5px;
@@ -196,25 +199,25 @@ li {
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
-
+ 
 .hero-tagline {
     font-size: 1.5rem;
     font-weight: 400;
     color: #e8f0f5;
     margin-bottom: 2rem;
 }
-
+ 
 .hero-links {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+ 
 /* ============================================
    BUTTONS
    ============================================ */
-
+ 
 .btn {
     display: inline-block;
     padding: 0.875rem 2rem;
@@ -225,44 +228,44 @@ li {
     cursor: pointer;
     border: 2px solid transparent;
 }
-
+ 
 .btn-primary {
     background: #7eb3d6;
     color: white;
 }
-
+ 
 .btn-primary:hover {
     background: #6a9fc4;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(126, 179, 214, 0.3);
 }
-
+ 
 .btn-secondary {
     background: transparent;
     color: white;
     border: 2px solid white;
 }
-
+ 
 .btn-secondary:hover {
     background: white;
     color: #1a2332;
 }
-
+ 
 /* ============================================
    ABOUT SECTION
    ============================================ */
-
+ 
 .about-section {
     background: #f8f9fa;
 }
-
+ 
 .about-intro p {
     font-size: 1.05rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
     color: #444;
 }
-
+ 
 .manifesto {
     background: white;
     padding: 2rem;
@@ -270,43 +273,43 @@ li {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     margin-top: 2rem;
 }
-
+ 
 .manifesto h3 {
     color: #1a2332;
     margin-bottom: 1.5rem;
 }
-
+ 
 .manifesto ul {
     list-style: none;
     margin-left: 0;
 }
-
+ 
 .manifesto ul li {
     padding-left: 2rem;
     position: relative;
     margin-bottom: 0.8rem;
     font-size: 1rem;
 }
-
+ 
 .manifesto ul li::before {
     content: '';
 }
-
+ 
 .location-tag {
     margin-top: 1.5rem;
     font-style: italic;
     color: #666;
     text-align: center;
 }
-
+ 
 /* ============================================
    FOUNDER SECTION
    ============================================ */
-
+ 
 .founder-section {
     background: white;
 }
-
+ 
 .founder-content {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -314,70 +317,70 @@ li {
     margin-top: 2.5rem;
     align-items: start;
 }
-
+ 
 .founder-image {
     position: sticky;
     top: 100px;
 }
-
+ 
 .founder-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
-
+ 
 .founder-bio h3 {
     font-size: 1.8rem;
     color: #1a2332;
     margin-bottom: 0.5rem;
 }
-
+ 
 .founder-title {
     font-size: 1.1rem;
     color: #7eb3d6;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
-
+ 
 .founder-bio p {
     font-size: 1rem;
     line-height: 1.7;
     color: #444;
     margin-bottom: 1.3rem;
 }
-
+ 
 .expertise {
     background: #f8f9fa;
     padding: 1.8rem;
     border-radius: 12px;
     margin: 1.5rem 0;
 }
-
+ 
 .expertise h4 {
     color: #1a2332;
     margin-bottom: 1rem;
 }
-
+ 
 .expertise ul {
     list-style: none;
     margin-left: 0;
 }
-
+ 
 .expertise ul li {
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
 }
-
+ 
 .expertise ul li::before {
-    content: 'â–¸';
+    content: '▸';
     position: absolute;
     left: 0;
     color: #7eb3d6;
     font-weight: bold;
 }
-
+ 
 .philosophy {
     background: #f4f7fb;
     color: #1a2332;
@@ -387,38 +390,38 @@ li {
     margin: 1.5rem 0;
     font-style: italic;
 }
-
+ 
 .philosophy p {
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.7;
 }
-
+ 
 .current-status {
     font-weight: 500;
     color: #1a2332;
 }
-
+ 
 /* ============================================
    IMPACT SECTION
    ============================================ */
-
+ 
 .impact-section {
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
     color: white;
 }
-
+ 
 .impact-section .section-title {
     color: white;
 }
-
+ 
 .impact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
-
+ 
 .impact-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -427,38 +430,38 @@ li {
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-
+ 
 .impact-card:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
-
+ 
 .impact-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-
+ 
 .impact-card h3 {
     color: white;
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
 }
-
+ 
 .impact-card p {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
     line-height: 1.6;
 }
-
+ 
 /* ============================================
    PROJECTS SECTION
    ============================================ */
-
+ 
 .projects-section {
     background: #f8f9fa;
 }
-
+ 
 .projects-note {
     background: white;
     padding: 2rem;
@@ -467,30 +470,30 @@ li {
     max-width: 900px;
     margin: 0 auto;
 }
-
+ 
 .projects-note strong {
     color: #1a2332;
 }
-
+ 
 .projects-note ul {
     margin-top: 1rem;
 }
-
+ 
 /* ============================================
    SKILLS SECTION
    ============================================ */
-
+ 
 .skills-section {
     background: white;
 }
-
+ 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
-
+ 
 .skill-category {
     background: #f8f9fa;
     padding: 1.8rem;
@@ -498,37 +501,37 @@ li {
     border-left: 4px solid #7eb3d6;
     transition: all 0.3s ease;
 }
-
+ 
 .skill-category:hover {
     transform: translateX(5px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
+ 
 .skill-category h3 {
     color: #1a2332;
     margin-bottom: 0.8rem;
 }
-
+ 
 .skill-category p {
     color: #555;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 0;
 }
-
+ 
 /* ============================================
    EDUCATION SECTION
    ============================================ */
-
+ 
 .education-section {
     background: #f8f9fa;
 }
-
+ 
 .education-timeline {
     max-width: 900px;
     margin: 2.5rem auto;
 }
-
+ 
 .education-item {
     background: white;
     padding: 1.8rem;
@@ -537,38 +540,38 @@ li {
     margin-bottom: 1.5rem;
     border-left: 4px solid #7eb3d6;
 }
-
+ 
 .education-item h3 {
     color: #1a2332;
     margin-bottom: 0.5rem;
 }
-
+ 
 .institution {
     color: #666;
     font-size: 1rem;
     margin-bottom: 0.3rem;
 }
-
+ 
 .details {
     color: #666;
     font-size: 0.95rem;
     margin-bottom: 0.3rem;
 }
-
+ 
 .specialization {
     color: #444;
     font-size: 0.9rem;
     font-style: italic;
 }
-
+ 
 /* ============================================
    CERTIFICATIONS
    ============================================ */
-
+ 
 .certifications {
     margin-top: 3rem;
 }
-
+ 
 .cert-category {
     background: white;
     padding: 1.8rem;
@@ -576,7 +579,7 @@ li {
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
-
+ 
 .cert-category h3 {
     color: #1a2332;
     font-size: 1.2rem;
@@ -584,47 +587,47 @@ li {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #7eb3d6;
 }
-
+ 
 .cert-category ul {
     list-style: none;
     margin-left: 0;
 }
-
+ 
 .cert-category ul li {
     margin-bottom: 1.2rem;
     padding-left: 1.5rem;
     position: relative;
     line-height: 1.6;
 }
-
+ 
 .cert-category ul li::before {
-    content: 'âœ“';
+    content: '✓';
     position: absolute;
     left: 0;
     color: #7eb3d6;
     font-weight: bold;
     font-size: 1.2rem;
 }
-
+ 
 .cert-category ul li strong {
     color: #1a2332;
     font-size: 1rem;
 }
-
+ 
 .cert-category ul li em {
     color: #666;
     font-size: 0.9rem;
 }
-
+ 
 /* ============================================
    CONTACT SECTION
    ============================================ */
-
+ 
 .contact-section {
     background: white;
     padding: 4rem 0;
 }
-
+ 
 .contact-links {
     display: flex;
     justify-content: center;
@@ -632,7 +635,7 @@ li {
     margin: 2.5rem 0;
     flex-wrap: wrap;
 }
-
+ 
 .contact-link {
     display: flex;
     align-items: center;
@@ -643,63 +646,63 @@ li {
     border: 2px solid transparent;
     transition: all 0.3s ease;
 }
-
+ 
 .contact-link:hover {
     background: #7eb3d6;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(126, 179, 214, 0.3);
 }
-
+ 
 .link-icon {
     font-size: 1.5rem;
 }
-
+ 
 .link-text {
     font-size: 1rem;
     font-weight: 600;
 }
-
+ 
 .location {
     text-align: center;
     font-size: 1rem;
     color: #666;
     margin-top: 2rem;
 }
-
+ 
 /* ============================================
    FOOTER
    ============================================ */
-
+ 
 .footer {
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
     color: white;
     padding: 2.5rem 0;
     text-align: center;
 }
-
+ 
 .footer-text {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
-
+ 
 .footer-tagline {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #a8c5d9;
 }
-
+ 
 .footer-motto {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
     font-style: italic;
 }
-
+ 
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
-
+ 
 /* Tablets */
 @media (max-width: 968px) {
     .nav-menu {
@@ -730,10 +733,10 @@ li {
     }
     
     .hero-banner {
-        height: 300px;
+        max-width: 100%;
     }
 }
-
+ 
 /* Mobile */
 @media (max-width: 640px) {
     html {
@@ -746,10 +749,6 @@ li {
     
     .section {
         padding: 2.5rem 0;
-    }
-    
-    .hero-banner {
-        height: 220px;
     }
     
     .hero-content {
@@ -793,7 +792,7 @@ li {
         padding: 1.5rem;
     }
 }
-
+ 
 /* Print Styles */
 @media print {
     .header,
@@ -807,19 +806,19 @@ li {
         page-break-inside: avoid;
     }
 }
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 /* ============================================
    GITHUB EMBED - PROJECTS SECTION
    ============================================ */
-
+ 
 .github-embed-container {
     background: white;
     padding: 2rem;
@@ -827,7 +826,7 @@ li {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     margin-top: 2rem;
 }
-
+ 
 .github-profile-header {
     display: flex;
     justify-content: space-between;
@@ -836,33 +835,33 @@ li {
     padding-bottom: 1rem;
     border-bottom: 2px solid #7eb3d6;
 }
-
+ 
 .github-profile-header h3 {
     color: #1a2332;
     margin-bottom: 0;
 }
-
+ 
 .github-iframe {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     background: white;
 }
-
+ 
 /* ============================================
    ARTICLES SECTION - MEDIUM EMBEDS
    ============================================ */
-
+ 
 .articles-section {
     background: white;
 }
-
+ 
 .articles-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     margin-top: 2.5rem;
 }
-
+ 
 .article-card {
     background: #f8f9fa;
     padding: 2rem;
@@ -870,54 +869,54 @@ li {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
 }
-
+ 
 .article-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
-
+ 
 .article-header {
     margin-bottom: 1.5rem;
 }
-
+ 
 .article-header h3 {
     color: #1a2332;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
-
+ 
 .article-meta {
     color: #666;
     font-size: 1rem;
     font-style: italic;
     margin-bottom: 0;
 }
-
+ 
 .article-embed {
     margin: 1.5rem 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+ 
 .medium-iframe {
     border-radius: 8px;
     background: white;
 }
-
+ 
 .article-link {
     margin-top: 1rem;
     display: inline-block;
 }
-
+ 
 /* ============================================
    PROMPT ENGINEERING GUIDE SECTION
    ============================================ */
-
+ 
 .guide-section {
     background: #f8f9fa;
 }
-
+ 
 .guide-container {
     background: white;
     padding: 2rem;
@@ -925,80 +924,80 @@ li {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     margin-top: 2.5rem;
 }
-
+ 
 .guide-header {
     text-align: center;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid #7eb3d6;
 }
-
+ 
 .guide-header h3 {
     color: #1a2332;
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
 }
-
+ 
 .guide-header p {
     color: #666;
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
 }
-
+ 
 .guide-actions {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+ 
 .pdf-embed-container {
     margin: 2rem 0;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
+ 
 .pdf-iframe {
     border-radius: 8px;
     background: white;
 }
-
+ 
 .guide-topics {
     background: #f8f9fa;
     padding: 1.8rem;
     border-radius: 12px;
     margin-top: 2rem;
 }
-
+ 
 .guide-topics h4 {
     color: #1a2332;
     margin-bottom: 1rem;
 }
-
+ 
 .guide-topics ul {
     list-style: none;
     margin-left: 0;
 }
-
+ 
 .guide-topics ul li {
     padding-left: 1.5rem;
     position: relative;
     margin-bottom: 0.8rem;
 }
-
+ 
 .guide-topics ul li::before {
-    content: 'â–¸';
+    content: '▸';
     position: absolute;
     left: 0;
     color: #7eb3d6;
     font-weight: bold;
 }
-
+ 
 /* ============================================
    RESPONSIVE UPDATES FOR NEW SECTIONS
    ============================================ */
-
+ 
 @media (max-width: 968px) {
     .github-profile-header {
         flex-direction: column;
@@ -1020,7 +1019,7 @@ li {
         width: 100%;
     }
 }
-
+ 
 @media (max-width: 640px) {
     .github-embed-container,
     .article-card,
@@ -1048,15 +1047,15 @@ li {
 .impact-icon {
     display: none;
 }
-
+ 
 .link-icon {
     display: none;
 }
-
+ 
 /* ============================================
    IMAGE STYLES FOR SECTIONS
    ============================================ */
-
+ 
 .section-image {
     width: 100%;
     max-width: 800px;
@@ -1067,55 +1066,55 @@ li {
     display: block;
     margin: 1.5rem auto;
 }
-
+ 
 .image-link {
     display: block;
     text-decoration: none;
     text-align: center;
 }
-
+ 
 .image-link:hover .section-image {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
-
+ 
 .article-card .section-image,
 .github-embed-container .section-image,
 .pdf-embed-container .section-image {
     cursor: pointer;
 }
-
+ 
 /* Update existing styles */
 .article-embed {
     margin: 1.5rem 0;
 }
-
+ 
 .github-iframe,
 .medium-iframe,
 .pdf-iframe {
     display: none;
 }
-
+ 
 /* ============================================
    BUTTON FIXES FOR VISIBILITY
    ============================================ */
-
+ 
 /* Fix for guide section buttons - make secondary button visible */
 .guide-section .btn-secondary {
     background: white;
     color: #1a2332;
     border: 2px solid #1a2332;
 }
-
+ 
 .guide-section .btn-secondary:hover {
     background: #1a2332;
     color: white;
 }
-
+ 
 /* ============================================
    MOBILE NAVIGATION FIX
    ============================================ */
-
+ 
 @media (max-width: 968px) {
     .nav-menu {
         display: none;
@@ -1131,7 +1130,7 @@ li {
         color: #1a2332;
     }
 }
-
+ 
 /* Better mobile navigation */
 @media (max-width: 768px) {
     .nav-container {
@@ -1142,7 +1141,7 @@ li {
         font-size: 1.1rem;
     }
 }
-
+ 
 /* ---- MOBILE IMAGE FIX ---- */
 @media (max-width: 640px) {
     .section-image,
@@ -1157,49 +1156,49 @@ li {
         border-radius: 10px;
         margin: 1rem 0;
     }
-
+ 
     /* Cards need padding fix on mobile */
     .article-card,
     .github-embed-container,
     .guide-container {
         padding: 1.2rem !important;
     }
-
+ 
     /* Grid fix */
     .articles-grid {
         gap: 1.8rem;
     }
 }
-
+ 
 /* ============================================
-   AGENTIC SYSTEMS SECTION â€” Dark Glass Style
+   AGENTIC SYSTEMS SECTION — Dark Glass Style
    ============================================ */
-
+ 
 .agents-section {
     background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
     padding: 4rem 0;
 }
-
+ 
 .agents-section .section-title {
     text-align: center;
     color: white;
     margin-bottom: 0.5rem;
 }
-
+ 
 .agents-section .section-subtitle {
     text-align: center;
     color: rgba(255,255,255,0.6);
     margin-bottom: 3rem;
     font-size: 1.05rem;
 }
-
+ 
 .agents-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
     margin-bottom: 2.5rem;
 }
-
+ 
 .agent-card {
     background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(12px);
@@ -1212,22 +1211,22 @@ li {
     flex-direction: column;
     gap: 0.8rem;
 }
-
+ 
 .agent-card:hover {
     background: rgba(255, 255, 255, 0.12);
     transform: translateY(-4px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.3);
 }
-
+ 
 .agent-card.featured {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(126, 179, 214, 0.4);
 }
-
+ 
 .agent-card.featured:hover {
     background: rgba(255, 255, 255, 0.15);
 }
-
+ 
 .agent-tag {
     font-size: 0.68rem;
     font-weight: 600;
@@ -1236,7 +1235,7 @@ li {
     color: #7eb3d6;
     font-family: 'Inter', sans-serif;
 }
-
+ 
 .agent-name {
     font-family: 'Poppins', sans-serif;
     font-size: 1.15rem;
@@ -1245,7 +1244,7 @@ li {
     margin: 0;
     line-height: 1.3;
 }
-
+ 
 .agent-desc {
     font-size: 0.88rem;
     color: rgba(255, 255, 255, 0.75);
@@ -1253,14 +1252,14 @@ li {
     margin: 0;
     flex-grow: 1;
 }
-
+ 
 .agent-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-top: 0.25rem;
 }
-
+ 
 .agent-tech span {
     font-size: 0.67rem;
     font-weight: 600;
@@ -1272,12 +1271,12 @@ li {
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.04em;
 }
-
+ 
 .agents-footer {
     text-align: center;
     margin-top: 1rem;
 }
-
+ 
 @media (max-width: 768px) {
     .agents-grid {
         grid-template-columns: 1fr;
