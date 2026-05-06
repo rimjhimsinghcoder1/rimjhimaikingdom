@@ -289,7 +289,7 @@ li {
 }
 
 .manifesto ul li::before {
-    content: '☔';
+    content: 'â˜”';
     position: absolute;
     left: 0;
     color: #7eb3d6;
@@ -375,7 +375,7 @@ li {
 }
 
 .expertise ul li::before {
-    content: '▸';
+    content: 'â–¸';
     position: absolute;
     left: 0;
     color: #7eb3d6;
@@ -602,7 +602,7 @@ li {
 }
 
 .cert-category ul li::before {
-    content: '✓';
+    content: 'âœ“';
     position: absolute;
     left: 0;
     color: #7eb3d6;
@@ -992,7 +992,7 @@ li {
 }
 
 .guide-topics ul li::before {
-    content: '▸';
+    content: 'â–¸';
     position: absolute;
     left: 0;
     color: #7eb3d6;
@@ -1175,8 +1175,118 @@ li {
     }
 }
 
+/* ============================================
+   AGENTIC SYSTEMS SECTION â€” Dark Glass Style
+   ============================================ */
 
+.agents-section {
+    background: linear-gradient(135deg, #1a2332 0%, #2d4a5e 100%);
+    padding: 4rem 0;
+}
 
+.agents-section .section-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.agents-section .section-subtitle {
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 3rem;
+    font-size: 1.05rem;
+}
+
+.agents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.agent-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 2rem;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.agent-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+}
+
+.agent-card.featured {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(126, 179, 214, 0.4);
+}
+
+.agent-card.featured:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.agent-tag {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7eb3d6;
+    font-family: 'Inter', sans-serif;
+}
+
+.agent-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.agent-desc {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.agent-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+.agent-tech span {
+    font-size: 0.67rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    background: rgba(126, 179, 214, 0.15);
+    color: #a8d4f0;
+    border: 1px solid rgba(126, 179, 214, 0.25);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.04em;
+}
+
+.agents-footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .agents-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
