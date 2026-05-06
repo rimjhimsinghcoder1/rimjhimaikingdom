@@ -289,11 +289,7 @@ li {
 }
 
 .manifesto ul li::before {
-    content: 'â˜”';
-    position: absolute;
-    left: 0;
-    color: #7eb3d6;
-    font-size: 1.2rem;
+    content: '';
 }
 
 .location-tag {
@@ -1287,6 +1283,4 @@ li {
         grid-template-columns: 1fr;
     }
 }
-
-
 
