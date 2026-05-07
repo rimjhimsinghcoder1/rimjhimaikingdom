@@ -335,7 +335,7 @@ li {
     color: #1a2332;
     margin-bottom: 0.5rem;
 }
- 
+
 .founder-title {
     font-size: 1.1rem;
     color: #7eb3d6;
@@ -349,7 +349,7 @@ li {
     color: #444;
     margin-bottom: 1.3rem;
 }
- 
+
 .expertise {
     background: #f8f9fa;
     padding: 1.8rem;
@@ -1283,9 +1283,13 @@ li {
     }
 }
 /* ============================================
-   JUSTIFIED TEXT
+   TEXT
    ============================================ */
 
-.founder-bio p {
-    text-align: justify;
+  FOUNDER SECTION
+   ============================================ */
+ .founder-bio p {
+    text-align: left;
+    line-height: 1.9;
+    letter-spacing: 0.2px;
 }
