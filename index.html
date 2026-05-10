@@ -20,6 +20,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ✅ CHANGE 1: Particle canvas CSS -->
+    <style>
+        .hero { position: relative; overflow: hidden; }
+        #hero-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.45; }
+        .hero-banner, .hero-content { position: relative; z-index: 1; }
+    </style>
 </head>
 <body>
 
@@ -36,7 +43,6 @@
                 <li><a href="#agents">Agents</a></li>
                 <li><a href="#articles">Articles</a></li>
                 <li><a href="#skills">Skills</a></li>
-                
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,6 +50,9 @@
 
     <!-- Hero Section with Banner -->
     <section id="home" class="hero">
+        <!-- ✅ CHANGE 2: Canvas element added -->
+        <canvas id="hero-canvas"></canvas>
+
         <div class="hero-banner">
             <img src="banner2.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
         </div>
@@ -58,7 +67,7 @@
         <div class="container">
             <h2 class="section-title">Welcome to RIMJHIM AI KINGDOM</h2>
             <div class="about-intro">
-                <p>RIMJHIM AI KINGDOM is an AI innovation studio founded by Rimjhim (Rémy) Singh where production grade intelligent agents are designed, built, and deployed from scratch. Every system starts with an architecture; reasoning engines, safety layers, multi-tool orchestration, not just a prompt and an API call. </p>
+                <p>RIMJHIM AI KINGDOM is an AI innovation studio founded by Rimjhim (Rémy) Singh where production grade intelligent agents are designed, built, and deployed from scratch. Every system starts with an architecture; reasoning engines, safety layers, multi-tool orchestration, not just a prompt and an API call.</p>
                 <p>This is where agentic AI meets real-world problems. From autonomous banking assistants to voice-first property agents, every build is production-grade, explainable, and engineered to act, not just respond.</p>
             </div>
             <div class="manifesto">
@@ -73,14 +82,13 @@
             </div>
         </div>
     </section>
-    
-<!-- Second Banner Section -->
-<section class="hero secondary-hero">
-    <div class="hero-banner">
-        <img src="banner1.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
-    </div>
-</section>
 
+    <!-- Second Banner Section -->
+    <section class="hero secondary-hero">
+        <div class="hero-banner">
+            <img src="banner1.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
+        </div>
+    </section>
 
     <!-- Agentic Systems Section -->
     <section id="agents" class="section agents-section">
@@ -147,21 +155,20 @@
                     <img src="IMG_2.jpg" alt="Rimjhim Singh - AI Engineer">
                 </div>
                 <div class="founder-bio">
-                    <h3>Rimjhim (Rémy) Singh </h3>
+                    <h3>Rimjhim (Rémy) Singh</h3>
                     <p class="founder-title">AI/ML Engineer | Technical AI Product Architect</p>
                     <p>Rimjhim (Rémy) Singh is a London-based AI Engineer, Technical AI Product Architect, an Economist and founder of RIMJHIM AI Kingdom, an AI Innovation Studio focused on building next-generation Agentic AI systems, intelligent automation products, and enterprise-grade AI solutions. She is also the sole architect and developer of this website.</p>
                     <p>She specialises in Agentic AI, LLM automation, AI agents, NLP, RAG pipelines, and scalable machine learning systems, designing intelligent solutions across the UK, Australia, Asia, and North America. Her work focuses on building AI systems capable of reasoning, planning, workflow orchestration, and real-world decision making.</p>
-                    <p>She holds an MSc in Data Science from the University of Warwick (Russell Group, UK) and a Master’s degree in Quantitative Economics. She is a Google Certified AI Professional with additional certifications in Software Engineering, Generative AI, MLOps, Cloud Computing, and Machine Learning from institutions including Hong Kong University of Science & Technology, Duke University, IIT Guwahati, AWS, and the University of Minnesota.</p>
+                    <p>She holds an MSc in Data Science from the University of Warwick (Russell Group, UK) and a Master's degree in Quantitative Economics. She is a Google Certified AI Professional with additional certifications in Software Engineering, Generative AI, MLOps, Cloud Computing, and Machine Learning from institutions including Hong Kong University of Science & Technology, Duke University, IIT Guwahati, AWS, and the University of Minnesota.</p>
                     <p>Professionally, she has worked as a Senior AI Engineer for a London-based company where she architected and optimised enterprise GenAI workflows supporting startups across 60+ countries. She has also contributed to an Australian healthcare startup by designing AI-powered healthcare systems and conversational AI solutions. Her experience spans enterprise AI agents, RLHF workflows, predictive systems, automation platforms, and complete AI product lifecycles from concept to deployment.</p>
-                    <p>Her work has delivered measurable impact including 95%+ workflow acceleration, 60%+ productivity improvements, and up to 98% faster document analysis for enterprise teams. Through RIMJHIM AI Kingdom, she has developed multiple full-stack AI systems including conversational banking assistants, voice-first PropTech applications, intelligent automation agents, and AI orchestration frameworks. She has independantly designed 10+ AI Agents.</p>
+                    <p>Her work has delivered measurable impact including 95%+ workflow acceleration, 60%+ productivity improvements, and up to 98% faster document analysis for enterprise teams. Through RIMJHIM AI Kingdom, she has developed multiple full-stack AI systems including conversational banking assistants, voice-first PropTech applications, intelligent automation agents, and AI orchestration frameworks. She has independently designed 10+ AI Agents.</p>
                     <p>Before transitioning fully into AI Engineering, Rimjhim built a strong academic and research background in Economics, Data Analysis, and Quantitative Research. She previously worked as an Assistant Professor and has published 15+ research articles and academic works across labour economics, industrial organisation, environmental policy, tourism economics, and ML-driven analysis.</p>
-                    <p>She presented research at the University of Oxford, where her paper was later published by Brill. She is also the author of <em>Puzzles of Labour Economics</em> (2022).Early in her career she worked as an Intern with the Ministry of Home Affairs, Government of India. </p>
+                    <p>She presented research at the University of Oxford, where her paper was later published by Brill. She is also the author of <em>Puzzles of Labour Economics</em> (2022). Early in her career she worked as an Intern with the Ministry of Home Affairs, Government of India.</p>
                     <p>She is an alumna of Ramjas College, University of Delhi (Economics Honours), where she secured the Overall Rank 1 position. She has also ranked among the top Kaggle participants globally in machine learning competitions and actively contributes to open-source AI communities including Hugging Face.</p>
                     <blockquote class="philosophy">
                         <p>"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."</p>
-                    </blockquote>   
+                    </blockquote>
                     <p class="current-status">Based in London and building RIMJHIM AI Kingdom as a space for innovation, experimentation, technical excellence, and ambitious AI product development.</p>
-                
                 </div>
             </div>
         </div>
@@ -181,58 +188,49 @@
         </div>
     </section>
 
-<!-- Articles Section -->
-<section id="articles" class="section articles-section">
-    <div class="container">
-        <h2 class="section-title">Online Articles on AI by Rimjhim (Rémy) Singh </h2>
-        <p class="section-subtitle">Insights on AI engineering, system design, and best practices</p>
-        <div class="articles-grid">
+    <!-- Articles Section -->
+    <section id="articles" class="section articles-section">
+        <div class="container">
+            <h2 class="section-title">Online Articles on AI by Rimjhim (Rémy) Singh</h2>
+            <p class="section-subtitle">Insights on AI engineering, system design, and best practices</p>
+            <div class="articles-grid">
 
-            <!-- Article 1 -->
-            <div class="article-card">
-                <div class="article-header">
-                    <h3>Designing Reliable AI Systems</h3>
-                    <p class="article-meta">My Engineering Approach Across RAG, Agents &amp; Real-World Workflows</p>
+                <div class="article-card">
+                    <div class="article-header">
+                        <h3>Designing Reliable AI Systems</h3>
+                        <p class="article-meta">My Engineering Approach Across RAG, Agents &amp; Real-World Workflows</p>
+                    </div>
+                    <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" class="image-link">
+                        <img src="medium1image.jpg" alt="Designing Reliable AI Systems Article" class="section-image">
+                    </a>
+                    <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-                <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" class="image-link">
-                    <img src="medium1image.jpg" alt="Designing Reliable AI Systems Article" class="section-image">
-                </a>
-                <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" class="btn btn-primary article-link">
-                    Read on Medium
-                </a>
-            </div>
 
-            <!-- Article 2 -->
-            <div class="article-card">
-                <div class="article-header">
-                    <h3>Why Your AI Project Failed</h3>
-                    <p class="article-meta">And How to Fix It</p>
+                <div class="article-card">
+                    <div class="article-header">
+                        <h3>Why Your AI Project Failed</h3>
+                        <p class="article-meta">And How to Fix It</p>
+                    </div>
+                    <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" class="image-link">
+                        <img src="medium2image.jpg" alt="Why Your AI Project Failed Article" class="section-image">
+                    </a>
+                    <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-                <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" class="image-link">
-                    <img src="medium2image.jpg" alt="Why Your AI Project Failed Article" class="section-image">
-                </a>
-                <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" class="btn btn-primary article-link">
-                    Read on Medium
-                </a>
-            </div>
 
-            <!-- Article 3 -->
-            <div class="article-card">
-                <div class="article-header">
-                    <h3>How to Validate AI-Generated Python Code</h3>
-                    <p class="article-meta">Practical Approaches for Reliable and Secure AI-Assisted Development</p>
+                <div class="article-card">
+                    <div class="article-header">
+                        <h3>How to Validate AI-Generated Python Code</h3>
+                        <p class="article-meta">Practical Approaches for Reliable and Secure AI-Assisted Development</p>
+                    </div>
+                    <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" class="image-link">
+                        <img src="medium3.png" alt="How to Validate AI-Generated Python Code Article" class="section-image">
+                    </a>
+                    <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-                <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" class="image-link">
-                    <img src="medium3.png" alt="How to Validate AI-Generated Python Code Article" class="section-image">
-                </a>
-                <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" class="btn btn-primary article-link">
-                    Read on Medium
-                </a>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
@@ -248,8 +246,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
@@ -301,9 +297,73 @@
         </div>
     </footer>
 
+    <!-- ✅ CHANGE 3: Particle animation script -->
+    <script>
+        (function () {
+            const canvas = document.getElementById('hero-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const PARTICLE_COUNT = 90;
+            const CONNECTION_DIST = 130;
+            const PARTICLE_COLOR = '126, 179, 214';
+            const SPEED = 0.55;
+            let particles = [], animId;
+
+            function resize() {
+                canvas.width  = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            }
+            function Particle() {
+                this.reset = function () {
+                    this.x  = Math.random() * canvas.width;
+                    this.y  = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * SPEED;
+                    this.vy = (Math.random() - 0.5) * SPEED;
+                    this.r  = Math.random() * 2 + 1;
+                };
+                this.update = function () {
+                    this.x += this.vx; this.y += this.vy;
+                    if (this.x < 0 || this.x > canvas.width)  this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height)  this.vy *= -1;
+                };
+                this.draw = function () {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${PARTICLE_COLOR}, 0.85)`;
+                    ctx.fill();
+                };
+                this.reset();
+            }
+            function init() {
+                resize();
+                particles = [];
+                for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+            }
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => { p.update(); p.draw(); });
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx   = particles[i].x - particles[j].x;
+                        const dy   = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < CONNECTION_DIST) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(${PARTICLE_COLOR}, ${(1 - dist / CONNECTION_DIST) * 0.6})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+                }
+                animId = requestAnimationFrame(draw);
+            }
+            window.addEventListener('resize', () => { cancelAnimationFrame(animId); init(); draw(); });
+            init();
+            draw();
+        })();
+    </script>
+
 </body>
 </html>
-
-
-
-
