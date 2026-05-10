@@ -200,13 +200,14 @@ li {
     margin-bottom: 0.5rem;
 }
  
+
 .hero-tagline {
-    font-size: 2rem;
+    font-size: 2.6rem;      /* was 2rem */
     font-weight: 500;
     color: #e8f0f5;
     margin-bottom: 2rem;
 }
- 
+
 .hero-links {
     display: flex;
     gap: 1rem;
