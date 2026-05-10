@@ -12,7 +12,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RIMJHIM AI KINGDOM - AI/ML Engineer with 5+ years experience. An AI Knowledge Hub showcasing AI solutions, LLM optimization, and enterprise projects.">
+    <meta name="description" content="RIMJHIM AI KINGDOM - AI/ML Engineer with 5+ years experience.">
     <meta name="keywords" content="AI Engineer, Machine Learning, LLM, NLP, Data Science">
     <meta name="author" content="Rimjhim Singh">
     <title>RIMJHIM AI Kingdom | AI Innovation Studio</title>
@@ -21,16 +21,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <!-- ✅ CHANGE 1: Particle canvas CSS -->
     <style>
-        .hero { position: relative; overflow: hidden; }
-        #hero-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.45; }
-        .hero-banner, .hero-content { position: relative; z-index: 1; }
+        .hero { position: relative !important; overflow: hidden !important; }
+        #hero-canvas {
+            position: absolute !important;
+            top: 0 !important; left: 0 !important;
+            width: 100% !important; height: 100% !important;
+            z-index: 2 !important;
+            opacity: 0.9 !important;
+            display: block !important;
+            pointer-events: none !important;
+        }
+        .hero-banner { position: relative !important; z-index: 1 !important; }
+        .hero-content { position: relative !important; z-index: 3 !important; }
     </style>
 </head>
 <body>
 
-    <!-- Header/Navigation -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
@@ -48,11 +55,8 @@
         </nav>
     </header>
 
-    <!-- Hero Section with Banner -->
     <section id="home" class="hero">
-        <!-- ✅ CHANGE 2: Canvas element added -->
         <canvas id="hero-canvas"></canvas>
-
         <div class="hero-banner">
             <img src="banner2.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
         </div>
@@ -61,8 +65,6 @@
         </div>
     </section>
 
-
-    <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container">
             <h2 class="section-title">Welcome to RIMJHIM AI KINGDOM</h2>
@@ -83,62 +85,53 @@
         </div>
     </section>
 
-    <!-- Second Banner Section -->
     <section class="hero secondary-hero">
         <div class="hero-banner">
             <img src="banner1.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
         </div>
     </section>
 
-    <!-- Agentic Systems Section -->
     <section id="agents" class="section agents-section">
         <div class="container">
             <h2 class="section-title">Agentic Systems built by Rimjhim (Rémy) Singh</h2>
             <p class="section-subtitle">Real architectures. Production-grade AI agents.</p>
             <div class="agents-grid">
-
                 <div class="agent-card featured">
                     <div class="agent-tag">FinTech · Agentic AI</div>
                     <h3 class="agent-name">Intelligent Banking Agentic AI Chatbot</h3>
                     <p class="agent-desc">An AI-native banking agent built on a ReAct Orchestration Engine with a Six-Gate Safety System, verifying every action against FCA/GDPR rules before execution. Replaces manually coded conversation flows with one intelligent reasoning system. Confidence-based routing escalates to human agents when certainty drops below threshold.</p>
                     <div class="agent-tech"><span>ReAct Engine</span><span>RAG</span><span>6-Gate Safety</span><span>LangChain</span><span>FCA/GDPR</span></div>
                 </div>
-
                 <div class="agent-card featured">
                     <div class="agent-tag">PropTech · Voice-First · Agentic</div>
                     <h3 class="agent-name">Voice-First Property Search Agent</h3>
                     <p class="agent-desc">An Agentic AI conversational UK property agent that understands natural speech, "2-bed flat in North London under £400k near the Tube", reasoning across multiple constraints simultaneously using Intent-Gating logic, asking clarifying questions like a human estate agent. Separate voice and text reasoning pipelines via FastAPI backend.</p>
                     <div class="agent-tech"><span>Web Speech API</span><span>FastAPI</span><span>Dual-Pipeline</span><span>Intent-Gating</span><span>PostgreSQL</span></div>
                 </div>
-
                 <div class="agent-card">
                     <div class="agent-tag">Productivity · RAG + Agent</div>
                     <h3 class="agent-name">AI Document Assistant</h3>
                     <p class="agent-desc">Dual-engine system: basic RAG retrieval plus intelligent ReAct agent answering document questions with source attribution and zero hallucinations. Local embeddings reduce cost by 10× vs standard implementations. Automatic fallback from agent to RAG on failure.</p>
                     <div class="agent-tech"><span>ChromaDB</span><span>SentenceTransformers</span><span>ReAct Agent</span><span>Streamlit</span></div>
                 </div>
-
                 <div class="agent-card">
                     <div class="agent-tag">Enterprise · NLP · Human-in-Loop</div>
                     <h3 class="agent-name">AI Review Response Agent</h3>
                     <p class="agent-desc">Multi-stage pipeline for restaurant review management: sentiment analysis, topic detection, crisis flagging, and brand-voice response generation, all routed through a human-in-loop approval dashboard. 92% sentiment accuracy across 500+ reviews tested.</p>
                     <div class="agent-tech"><span>GPT-4</span><span>FastAPI</span><span>React</span><span>Crisis Detection</span></div>
                 </div>
-
                 <div class="agent-card">
                     <div class="agent-tag">Automation · Agentic Workflow</div>
                     <h3 class="agent-name">Intelligent Email Agent</h3>
                     <p class="agent-desc">Agentic email system detecting, understanding context, and drafting replies with CRM integration, thread history extraction, sentiment matching, and human-in-loop approval for VIP contacts. Live personal-production deployment. 87% reduction in daily email handling time.</p>
                     <div class="agent-tech"><span>Gmail API</span><span>n8n</span><span>GPT-4</span><span>Few-shot Learning</span></div>
                 </div>
-
                 <div class="agent-card">
                     <div class="agent-tag">Automation · LLM Pipeline</div>
                     <h3 class="agent-name">AI News Intelligence System</h3>
                     <p class="agent-desc">Autonomous competitive intelligence pipeline running every 4 hours, aggregating 20+ sources, compressing articles into structured summaries via GPT-4, syncing to a searchable Notion knowledge base. 4× article coverage with near-zero manual overhead.</p>
                     <div class="agent-tech"><span>n8n</span><span>News API</span><span>GPT-4</span><span>Notion API</span></div>
                 </div>
-
             </div>
             <div class="agents-footer">
                 <a href="https://github.com/rimjhimsinghcoder1" target="_blank" class="btn btn-primary">Explore all builds on GitHub</a>
@@ -146,7 +139,6 @@
         </div>
     </section>
 
-    <!-- Founder Section -->
     <section id="founder" class="section founder-section">
         <div class="container">
             <h2 class="section-title">Meet the Founder</h2>
@@ -174,7 +166,6 @@
         </div>
     </section>
 
-    <!-- Impact/Achievements Section -->
     <section id="impact" class="section impact-section">
         <div class="container">
             <h2 class="section-title">Impact Delivered</h2>
@@ -188,13 +179,11 @@
         </div>
     </section>
 
-    <!-- Articles Section -->
     <section id="articles" class="section articles-section">
         <div class="container">
             <h2 class="section-title">Online Articles on AI by Rimjhim (Rémy) Singh</h2>
             <p class="section-subtitle">Insights on AI engineering, system design, and best practices</p>
             <div class="articles-grid">
-
                 <div class="article-card">
                     <div class="article-header">
                         <h3>Designing Reliable AI Systems</h3>
@@ -205,7 +194,6 @@
                     </a>
                     <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-
                 <div class="article-card">
                     <div class="article-header">
                         <h3>Why Your AI Project Failed</h3>
@@ -216,7 +204,6 @@
                     </a>
                     <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-
                 <div class="article-card">
                     <div class="article-header">
                         <h3>How to Validate AI-Generated Python Code</h3>
@@ -227,12 +214,10 @@
                     </a>
                     <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" class="btn btn-primary article-link">Read on Medium</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section skills-section">
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
@@ -247,7 +232,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">AI Engineering</h2>
@@ -274,7 +258,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
@@ -288,7 +271,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="footer-text">RIMJHIM AI KINGDOM © 2024-2025</p>
@@ -297,15 +279,14 @@
         </div>
     </footer>
 
-    <!-- ✅ CHANGE 3: Particle animation script -->
     <script>
         (function () {
             const canvas = document.getElementById('hero-canvas');
             if (!canvas) return;
             const ctx = canvas.getContext('2d');
-            const PARTICLE_COUNT = 90;
-            const CONNECTION_DIST = 130;
-            const PARTICLE_COLOR = '126, 179, 214';
+            const PARTICLE_COUNT = 120;
+            const CONNECTION_DIST = 150;
+            const PARTICLE_COLOR = '255, 255, 255';
             const SPEED = 0.55;
             let particles = [], animId;
 
@@ -319,7 +300,7 @@
                     this.y  = Math.random() * canvas.height;
                     this.vx = (Math.random() - 0.5) * SPEED;
                     this.vy = (Math.random() - 0.5) * SPEED;
-                    this.r  = Math.random() * 2 + 1;
+                    this.r  = Math.random() * 4 + 2;
                 };
                 this.update = function () {
                     this.x += this.vx; this.y += this.vy;
@@ -329,7 +310,7 @@
                 this.draw = function () {
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(${PARTICLE_COLOR}, 0.85)`;
+                    ctx.fillStyle = `rgba(${PARTICLE_COLOR}, 1)`;
                     ctx.fill();
                 };
                 this.reset();
@@ -351,8 +332,8 @@
                             ctx.beginPath();
                             ctx.moveTo(particles[i].x, particles[i].y);
                             ctx.lineTo(particles[j].x, particles[j].y);
-                            ctx.strokeStyle = `rgba(${PARTICLE_COLOR}, ${(1 - dist / CONNECTION_DIST) * 0.6})`;
-                            ctx.lineWidth = 0.6;
+                            ctx.strokeStyle = `rgba(${PARTICLE_COLOR}, ${(1 - dist / CONNECTION_DIST) * 0.9})`;
+                            ctx.lineWidth = 0.8;
                             ctx.stroke();
                         }
                     }
