@@ -202,8 +202,8 @@ li {
  
 
 .hero-tagline {
-    font-size: 2.6rem;      /* was 2rem */
-    font-weight: 500;
+    font-size: 2rem;      /* was 2rem */
+    font-weight: 400;
     color: #e8f0f5;
     margin-bottom: 2rem;
 }
