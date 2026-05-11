@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-683D6SH4YB"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -34,6 +33,26 @@
         }
         .hero-banner { position: relative !important; z-index: 1 !important; }
         .hero-content { position: relative !important; z-index: 3 !important; }
+
+        /* Demo Section */
+        .demo-section { background: #f8f9fa; }
+        .demo-container {
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        .demo-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 12px;
+            display: block;
+        }
+        @media (max-width: 640px) {
+            .demo-container iframe { height: 220px; }
+        }
     </style>
 </head>
 <body>
@@ -48,6 +67,7 @@
                 <li><a href="#impact">Impact</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#agents">Agents</a></li>
+                <li><a href="#demo">Demo</a></li>
                 <li><a href="#articles">Articles</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -61,7 +81,7 @@
             <img src="banner2.png" alt="RIMJHIM AI Kingdom Banner" class="banner-image">
         </div>
         <div class="hero-content">
-            <p class="hero-tagline">Founded by Rimjhim (Rémy) Singh - The Queen of RIMJHIM AI KINGDOM </p>
+            <p class="hero-tagline">Founded by Rimjhim (Rémy) Singh - The Queen of RIMJHIM AI KINGDOM</p>
         </div>
     </section>
 
@@ -135,6 +155,21 @@
             </div>
             <div class="agents-footer">
                 <a href="https://github.com/rimjhimsinghcoder1" target="_blank" class="btn btn-primary">Explore all builds on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ LIVE DEMO SECTION -->
+    <section id="demo" class="section demo-section">
+        <div class="container">
+            <h2 class="section-title">Live Demo</h2>
+            <p class="section-subtitle">AI Agent in Action — Designed &amp; Built by Rimjhim (Rémy) Singh</p>
+            <div class="demo-container">
+                <iframe 
+                    src="https://drive.google.com/file/d/1eT5u2u15LWXnDHJVYhNHkCs_yCPnVOqI/preview"
+                    allow="autoplay"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
@@ -278,6 +313,7 @@
             <p class="footer-motto">Built with precision | Powered by curiosity | Driven by impact</p>
         </div>
     </footer>
+
     <script>
     (function () {
         const canvas = document.getElementById('hero-canvas');
@@ -344,8 +380,7 @@
         init();
         draw();
     })();
-</script>
-    
+    </script>
 
 </body>
 </html>
