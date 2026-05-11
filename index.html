@@ -35,24 +35,44 @@
         .hero-content { position: relative !important; z-index: 3 !important; }
 
         /* Demo Section */
-        .demo-section { background: #f8f9fa; }
-        .demo-container {
-            max-width: 900px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-        .demo-container iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 12px;
-            display: block;
-        }
-        @media (max-width: 640px) {
-            .demo-container iframe { height: 220px; }
-        }
+.demo-section { background: #f8f9fa; }
+.demo-container { max-width: 900px; margin: 0 auto; }
+.demo-thumb-link {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.demo-thumb-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.demo-thumb-link:hover .demo-thumb-img { transform: scale(1.02); }
+.demo-play-btn {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 2.5rem;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+.demo-thumb-link:hover .demo-play-btn { background: #7eb3d6; }
+.demo-caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.95rem;
+}
     </style>
 </head>
 <body>
@@ -161,18 +181,17 @@
 
 
   <!-- Live Demo Section -->
-  <section id="demo" class="section demo-section">
+<section id="demo" class="section demo-section">
     <div class="container">
         <h2 class="section-title">Live Demo</h2>
         <p class="section-subtitle">AI Agent in Action — Designed &amp; Built by Rimjhim (Rémy) Singh</p>
         <div class="demo-container">
-            <iframe 
-                src="https://www.youtube.com/embed/5J36aEkB5FM"
-                title="AI Agent Live Demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <a href="https://drive.google.com/file/d/1eT5u2u15LWXnDHJVYhNHkCs_yCPnVOqI/view" target="_blank" class="demo-thumb-link">
+                <img src="demothumbnail.png" alt="AI Agent Live Demo" class="demo-thumb-img">
+                <div class="demo-play-btn">▶</div>
+            </a>
         </div>
+        <p class="demo-caption">Click to watch the full demo</p>
     </div>
 </section>
     
