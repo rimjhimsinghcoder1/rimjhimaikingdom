@@ -148,9 +148,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 32px;display:fl
 /* ── FOUNDER ── */
 .founder-section{background:var(--void);padding:80px 0;border-top:1px solid rgba(124,58,237,.1);}
 .founder-grid{display:grid;grid-template-columns:300px 1fr;gap:50px;align-items:start;margin-top:48px;}
-@media(max-width:768px){.founder-grid{grid-template-columns:1fr;}}
-.founder-photo{position:sticky;top:80px;}
-.founder-photo img{width:100%;border-radius:4px;border:1px solid rgba(124,58,237,.3);}
+@media(max-width:768px){
+  .founder-grid{grid-template-columns:1fr;}
+  .founder-photo{position:static!important;max-width:180px;margin:0 auto 28px;}
+}
+.founder-photo{position:static;}
+.founder-photo img{width:100%;border-radius:4px;border:1px solid rgba(124,58,237,.3);display:block;}
 .founder-bio h3{font-family:'Orbitron',monospace;font-size:26px;font-weight:700;letter-spacing:2px;color:#ffffff;margin-bottom:8px;}
 .founder-title{font-family:'Share Tech Mono',monospace;font-size:14px;letter-spacing:2px;color:var(--accent2);margin-bottom:26px;}
 .founder-bio p{font-size:17px;line-height:2;color:#e2e8f0;margin-bottom:18px;}
@@ -190,7 +193,7 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
 
 <!-- ══ 01 HERO BANNER ══ -->
 <section id="home" class="hero">
-  <img src="banner3.png" alt="RIMJHIM AI KINGDOM Banner">
+  <img src="banner2.png" alt="RIMJHIM AI KINGDOM Banner">
   <div class="hero-overlay"></div>
 </section>
 
