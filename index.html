@@ -17,97 +17,159 @@
   --void:#02040a; --deep:#060d1a; --surface:#0d1b2e; --panel:#0f1e35;
   --accent:#7c3aed; --accent2:#06b6d4; --accent3:#f59e0b;
   --glow:#a78bfa; --success:#10b981; --danger:#ef4444;
-  /* UPDATED: Feeka text removed, made Pure White */
-  --text:#ffffff; 
-  --muted:#cbd5e1; 
-  --border:rgba(124,58,237,.3);
-  --grid:rgba(124,58,237,.08);
+  --text:#e2e8f0; --muted:#475569; --border:rgba(124,58,237,.2);
+  --grid:rgba(124,58,237,.06);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--void);color:var(--text);font-family:'Rajdhani',sans-serif;overflow-x:hidden;cursor:default; font-size: 18px;}
+body{background:var(--void);color:var(--text);font-family:'Rajdhani',sans-serif;overflow-x:hidden;cursor:default;}
 
 /* ── SCROLLBAR ── */
-::-webkit-scrollbar{width:5px;}
-::-webkit-scrollbar-thumb{background:var(--accent2);border-radius:2px;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:var(--accent);border-radius:2px;}
 
 /* ── SCANLINE ── */
-.scanline{position:fixed;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:.4;z-index:999;pointer-events:none;animation:scan 10s linear infinite;}
+.scanline{position:fixed;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:.25;z-index:999;pointer-events:none;animation:scan 10s linear infinite;}
 @keyframes scan{from{top:0}to{top:100%}}
 
 /* ── GRID OVERLAY ── */
 .grid-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:64px 64px;z-index:0;pointer-events:none;}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;background:rgba(2,4,10,.95);border-bottom:1px solid rgba(124,58,237,.3);backdrop-filter:blur(12px);}
-.nav-logo{font-family:'Orbitron',monospace;font-size:16px;font-weight:900;letter-spacing:3px;color:white;text-decoration:none;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;background:rgba(2,4,10,.92);border-bottom:1px solid rgba(124,58,237,.15);backdrop-filter:blur(8px);}
+.nav-logo{font-family:'Orbitron',monospace;font-size:13px;font-weight:900;letter-spacing:3px;color:var(--glow);text-decoration:none;}
 .nav-logo span{color:var(--accent2);}
-.nav-links{display:flex;gap:32px;list-style:none;}
-.nav-links a{font-family:'Share Tech Mono',monospace;font-size:13px;letter-spacing:2px;color:white;text-decoration:none;transition:color .2s;font-weight: bold;}
+.nav-links{display:flex;gap:24px;list-style:none;}
+.nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:var(--accent2);}
-.nav-status{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--success);letter-spacing:2px;font-weight: bold;}
-.dot{display:inline-block;width:7px;height:7px;background:var(--success);border-radius:50%;margin-right:8px;animation:blink 2s infinite;}
+.nav-status{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;}
+.dot{display:inline-block;width:5px;height:5px;background:var(--success);border-radius:50%;margin-right:5px;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
-/* ── HERO ── */
-.hero{position:relative;margin-top:60px;width:100%;overflow:hidden;z-index:1;}
-.hero img{width:100%;height:auto;display:block;filter: brightness(1.1);}
+/* ── HERO BANNER ── */
+.hero{position:relative;margin-top:52px;width:100%;overflow:hidden;z-index:1;}
+.hero img{width:100%;height:50%;display:block;}
+.hero-overlay{position:absolute;bottom:0;left:0;right:0;height:35px;background:linear-gradient(transparent,var(--void));}
+
+/* ── SECTIONS ── */
+.section{position:relative;z-index:10;padding:70px 0;}
+.container{max-width:1100px;margin:0 auto;padding:0 24px;}
 
 /* ── INTRO ── */
-.intro-section{background:var(--void);padding:100px 0 80px;}
-.intro-eyebrow{font-family:'Share Tech Mono',monospace;font-size:16px;letter-spacing:6px;color:var(--accent2);text-align:center;margin-bottom:24px;font-weight: bold;}
-.intro-title{font-family:'Orbitron',monospace;font-size:clamp(32px,5.5vw,64px);font-weight:900;letter-spacing:4px;text-align:center;color: white; margin-bottom:32px;line-height:1.1; text-shadow: 0 0 20px rgba(124,58,237,0.3);}
-.world-first-badge{display:flex;align-items:center;justify-content:center;margin:0 auto 48px;}
-.wfb-inner{display:inline-flex;align-items:center;gap:15px;padding:12px 32px;border:2px solid var(--accent);border-radius:4px;background:rgba(124,58,237,0.15);}
-.wfb-label{font-family:'Share Tech Mono',monospace;font-size:14px;letter-spacing:3px;color:white;font-weight: bold;}
-.intro-body{max-width:900px;margin:0 auto;text-align:center;}
-.intro-body p{font-size:22px;line-height:1.8;color:white;margin-bottom:24px;}
-.intro-body p strong{color:var(--accent2);font-weight:700;}
+.intro-section{background:var(--void);padding:80px 0 60px;}
+.intro-eyebrow{font-family:'Share Tech Mono',monospace;font-size:13px;letter-spacing:5px;color:#64748b;text-align:center;margin-bottom:18px;}
+.intro-title{font-family:'Orbitron',monospace;font-size:clamp(26px,4.5vw,48px);font-weight:900;letter-spacing:4px;text-align:center;background:linear-gradient(135deg,var(--glow),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:24px;line-height:1.2;}
+.world-first-badge{display:flex;align-items:center;justify-content:center;margin:0 auto 36px;}
+.wfb-inner{display:inline-flex;align-items:center;gap:12px;padding:10px 28px;border:1px solid rgba(124,58,237,.6);border-radius:2px;background:rgba(124,58,237,.1);}
+.wfb-label{font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--glow);}
+.wfb-dot{width:7px;height:7px;border-radius:50%;background:var(--accent3);animation:blink 1.5s infinite;}
+.intro-body{max-width:800px;margin:0 auto;text-align:center;}
+.intro-body p{font-size:18px;line-height:1.9;color:#cbd5e1;margin-bottom:16px;}
+.intro-body p strong{color:var(--accent2);font-weight:600;}
 
 /* ── AGENTS ROW ── */
-.agents-row-section{background:var(--deep);padding:60px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.agents-row-title{font-family:'Share Tech Mono',monospace;font-size:16px;letter-spacing:5px;color:white;text-align:center;margin-bottom:32px;text-transform:uppercase;font-weight: bold;}
-.agents-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+.agents-row-section{background:var(--deep);padding:40px 0;border-top:1px solid rgba(124,58,237,.1);border-bottom:1px solid rgba(124,58,237,.1);}
+.agents-row-title{font-family:'Share Tech Mono',monospace;font-size:13px;letter-spacing:4px;color:#94a3b8;text-align:center;margin-bottom:24px;text-transform:uppercase;}
+.agents-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;}
 @media(max-width:768px){.agents-row{grid-template-columns:repeat(3,1fr);}}
-.agent-pill{background:var(--surface);border:1px solid rgba(255,255,255,.2);border-radius:4px;padding:20px 14px;text-align:center;transition:all .3s;}
-.agent-pill:hover{transform:translateY(-8px); border-color: white; box-shadow: 0 0 15px rgba(255,255,255,0.1);}
-.agent-pill-icon{font-size:32px;margin-bottom:12px;display:block;}
-.agent-pill-name{font-family:'Orbitron',monospace;font-size:12px;font-weight:900;letter-spacing:1px;margin-bottom:8px;display:block; color: white;}
-.agent-pill-stack{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--accent2);letter-spacing:1px;display:block; font-weight: bold;}
+@media(max-width:480px){.agents-row{grid-template-columns:repeat(2,1fr);}}
+.agent-pill{background:var(--surface);border:1px solid rgba(255,255,255,.07);border-radius:3px;padding:16px 12px;text-align:center;transition:transform .2s,border-color .2s;}
+.agent-pill:hover{transform:translateY(-4px);}
+.agent-pill-icon{font-size:24px;margin-bottom:8px;display:block;}
+.agent-pill-name{font-family:'Orbitron',monospace;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:5px;display:block;}
+.agent-pill-stack{font-family:'Share Tech Mono',monospace;font-size:10px;color:#64748b;letter-spacing:1px;display:block;}
+.ap-bank{border-color:rgba(124,58,237,.3);} .ap-bank .agent-pill-name{color:var(--glow);}
+.ap-prop{border-color:rgba(6,182,212,.3);}  .ap-prop .agent-pill-name{color:var(--accent2);}
+.ap-doc {border-color:rgba(245,158,11,.3);}  .ap-doc  .agent-pill-name{color:var(--accent3);}
+.ap-rest{border-color:rgba(239,68,68,.3);}   .ap-rest .agent-pill-name{color:#f87171;}
+.ap-off {border-color:rgba(16,185,129,.3);}  .ap-off  .agent-pill-name{color:var(--success);}
+.ap-news{border-color:rgba(59,130,246,.3);}  .ap-news .agent-pill-name{color:#60a5fa;}
 
-/* ── CITY SECTION ── */
-.city-head h2{ color: white; text-shadow: 0 0 30px rgba(6,182,212,0.4); }
-.city-head p{ font-size: 16px; color: var(--accent2); font-weight: bold; margin-top: 10px;}
-.ccb { font-size: 13px; color: white; border-color: var(--accent2); background: rgba(6,182,212,0.1); font-weight: bold; }
+/* ── AI CITY ── */
+.city-section{background:var(--void);padding:0;position:relative;overflow:hidden;}
+.city-bg-grid{position:absolute;top:0;left:0;width:500%;height:500%;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:50px 50px;pointer-events:none;}
+.city-scan{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:.3;animation:scan 8s linear infinite;pointer-events:none;}
+.city-content{position:relative;z-index:10;max-width:1400px;margin:0 auto;padding:70px 24px 50px;}
+.city-head{text-align:center;margin-bottom:14px;}
+.city-head h2{font-family:'Orbitron',monospace;font-size:clamp(32px,6vw,72px);font-weight:900;letter-spacing:8px;background:linear-gradient(135deg,var(--glow),var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;}
+.city-head p{font-family:'Share Tech Mono',monospace;font-size:13px;color:#64748b;letter-spacing:4px;}
+.city-claim-badge{display:flex;justify-content:center;margin:16px 0 36px;}
+.ccb{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--glow);padding:8px 22px;border:1px solid rgba(124,58,237,.5);background:rgba(124,58,237,.1);border-radius:2px;}
 
-/* SVG TEXT FIX (MAKING CITY LABELS BRIGHT) */
-svg text { fill: white !important; font-weight: bold !important; text-shadow: 0 0 5px black; }
-svg text[font-size="11"] { fill: var(--accent2) !important; opacity: 1 !important; }
+/* ISOMETRIC CITY SVG WRAPPER */
+.city-svg-wrap{width:100%;max-width:none;margin:0 auto;position:relative;}
+.city-svg-wrap svg{width:100%;height:auto;overflow:visible;}
+.bld-g{cursor:pointer;}
+.bld-g:hover{filter:brightness(1.3) drop-shadow(0 0 8px rgba(255,255,255,0.3));}
+
+/* PROBLEM PANEL */
+.problem-panel{display:none;max-width:1300px;margin:20px auto 0;background:var(--surface);border:1px solid rgba(124,58,237,.3);border-radius:3px;padding:28px;font-family:'Rajdhani',sans-serif;}
+.problem-panel.open{display:block;animation:fadeUp .3s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.pp-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;}
+.pp-tag{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:3px;color:#64748b;margin-bottom:6px;}
+.pp-title{font-family:'Orbitron',monospace;font-size:20px;font-weight:700;}
+.pp-close{background:none;border:1px solid var(--muted);color:var(--muted);width:28px;height:28px;border-radius:2px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.pp-close:hover{border-color:var(--danger);color:var(--danger);}
+.pp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:600px){.pp-grid{grid-template-columns:1fr;}}
+.pp-box{padding:18px;border-radius:2px;}
+.pp-box-prob{background:rgba(239,68,68,.06);border-left:2px solid var(--danger);}
+.pp-box-sol {background:rgba(16,185,129,.06);border-left:2px solid var(--success);}
+.pp-box-label{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;margin-bottom:12px;}
+.pp-box-label-prob{color:var(--danger);}
+.pp-box-label-sol {color:var(--success);}
+.pp-problem-list{list-style:none;}
+.pp-problem-list li{font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:8px;padding-left:16px;position:relative;}
+.pp-problem-list li::before{content:'✕';position:absolute;left:0;color:var(--danger);font-size:11px;top:2px;}
+.pp-sol-text{font-size:15px;color:#e2e8f0;line-height:1.8;}
+.pp-stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+.pp-stack span{font-family:'Share Tech Mono',monospace;font-size:10px;padding:3px 10px;border-radius:2px;border:1px solid;letter-spacing:1px;}
 
 /* ── DEMO ── */
-.demo-section{background:var(--deep);padding:90px 0;}
-.section-eyebrow{font-family:'Share Tech Mono',monospace;font-size:14px;letter-spacing:5px;color:var(--accent2);text-align:center;margin-bottom:12px; font-weight: bold;}
-.section-title{font-family:'Orbitron',monospace;font-size:36px;font-weight:900;letter-spacing:5px;text-align:center;color:white;margin-bottom:12px;}
-.section-sub{font-size:18px;color:white;text-align:center;margin-bottom:48px; font-weight: 500;}
-.demo-card-name{font-size:14px; color: var(--accent2); font-weight: 900;}
-.demo-card-desc{font-size:15px; color: white; line-height: 1.7;}
+.demo-section{background:var(--deep);padding:70px 0;border-top:1px solid rgba(124,58,237,.1);}
+.section-eyebrow{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:4px;color:var(--muted);text-align:center;margin-bottom:10px;}
+.section-title{font-family:'Orbitron',monospace;font-size:clamp(16px,3vw,26px);font-weight:700;letter-spacing:4px;text-align:center;color:var(--text);margin-bottom:8px;}
+.section-sub{font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--muted);text-align:center;margin-bottom:36px;}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:640px){.demo-grid{grid-template-columns:1fr;}}
+.demo-card{background:var(--surface);border:1px solid rgba(255,255,255,.07);border-radius:3px;overflow:hidden;transition:border-color .2s,box-shadow .2s;}
+.demo-card:hover{border-color:rgba(126,179,214,.3);box-shadow:0 0 24px rgba(126,179,214,.08);}
+.demo-card-inner{padding:16px;}
+.demo-card-name{font-family:'Orbitron',monospace;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--text);margin-bottom:8px;}
+.demo-card-desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+.demo-thumb{position:relative;display:block;background:var(--panel);border-radius:2px;overflow:hidden;cursor:pointer;}
+.demo-thumb img{width:100%;height:auto;display:block;transition:transform .3s;}
+.demo-thumb:hover img{transform:scale(1.02);}
+.demo-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;font-size:20px;color:white;transition:background .3s;}
+.demo-thumb:hover .demo-play{background:rgba(124,58,237,.8);}
+.demo-caption{font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--muted);text-align:center;margin-top:10px;}
 
 /* ── FOUNDER ── */
-.founder-bio h3{font-size:32px; color: white;}
-.founder-title{font-size:14px; color: var(--accent2); font-weight: bold; margin-bottom: 25px;}
-.founder-bio p{font-size:18px; line-height: 1.8; color: white; margin-bottom: 20px;}
-.founder-quote p{font-size:20px; color: white; font-weight: 500;}
-.founder-link{font-size:12px; border-color: var(--accent2); color: white; background: rgba(6,182,212,0.1); font-weight: bold;}
-.founder-link:hover{background: var(--accent2); color: black;}
+.founder-section{background:var(--void);padding:70px 0;border-top:1px solid rgba(124,58,237,.1);}
+.founder-grid{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:start;margin-top:40px;}
+@media(max-width:768px){.founder-grid{grid-template-columns:1fr;}}
+.founder-photo{position:sticky;top:80px;}
+.founder-photo img{width:100%;border-radius:3px;border:1px solid rgba(124,58,237,.3);}
+.founder-bio h3{font-family:'Orbitron',monospace;font-size:18px;font-weight:700;letter-spacing:2px;color:var(--text);margin-bottom:4px;}
+.founder-title{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--accent2);margin-bottom:20px;}
+.founder-bio p{font-size:14px;line-height:1.9;color:#94a3b8;margin-bottom:14px;}
+.founder-quote{border-left:2px solid var(--accent);padding:12px 18px;margin:20px 0;background:rgba(124,58,237,.06);border-radius:0 3px 3px 0;}
+.founder-quote p{font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0;}
+.founder-links{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;}
+.founder-link{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;padding:7px 16px;border:1px solid rgba(124,58,237,.4);color:var(--glow);text-decoration:none;border-radius:2px;transition:all .2s;}
+.founder-link:hover{background:rgba(124,58,237,.15);border-color:var(--accent);}
 
 /* ── FOOTER ── */
-footer{background:var(--deep); padding:50px 0; border-top: 2px solid var(--accent);}
-.footer-logo{font-size:18px; color: white;}
-.footer-tagline{font-size:14px; color: var(--accent2); font-weight: bold;}
-.footer-links a{font-size:13px; color: white; font-weight: bold;}
-.footer-links a:hover{color: var(--accent2);}
+footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:32px 0;text-align:center;}
+.footer-logo{font-family:'Orbitron',monospace;font-size:12px;letter-spacing:3px;color:var(--glow);margin-bottom:8px;}
+.footer-tagline{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--muted);margin-bottom:12px;}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.footer-links a{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);text-decoration:none;letter-spacing:1px;transition:color .2s;}
+.footer-links a:hover{color:var(--accent2);}
 
-/* MOBILE */
-@media(max-width:768px){ .nav-links, .nav-status{display:none;} }
+/* MOBILE NAV HIDE */
+@media(max-width:768px){.nav-links{display:none;}.nav-status{display:none;}}
 </style>
 </head>
 <body>
@@ -115,6 +177,7 @@ footer{background:var(--deep); padding:50px 0; border-top: 2px solid var(--accen
 <div class="grid-overlay"></div>
 <div class="scanline"></div>
 
+<!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo">RIMJHIM <span>AI</span> KINGDOM</a>
   <ul class="nav-links">
@@ -126,98 +189,408 @@ footer{background:var(--deep); padding:50px 0; border-top: 2px solid var(--accen
   <div class="nav-status"><span class="dot"></span>SYSTEMS ONLINE</div>
 </nav>
 
+<!-- ══ 01 HERO BANNER ══ -->
 <section id="home" class="hero">
   <img src="banner3.png" alt="RIMJHIM AI KINGDOM Banner">
+  <div class="hero-overlay"></div>
 </section>
 
+<!-- ══ 02 INTRO ══ -->
 <section id="intro" class="intro-section">
   <div class="container">
     <p class="intro-eyebrow">FOUNDED BY RIMJHIM (RÉMY) SINGH · LONDON</p>
     <h1 class="intro-title">WELCOME TO RIMJHIM AI KINGDOM</h1>
     <div class="world-first-badge">
       <div class="wfb-inner">
-        <span class="wfb-label">WORLD'S FIRST NAVIGABLE AGENTIC AI ECOSYSTEM</span>
+        <div class="wfb-dot"></div>
+        <span class="wfb-label">WORLD'S FIRST NAVIGABLE AGENTIC AI ECOSYSTEM · BUILT SOLO</span>
+        <div class="wfb-dot"></div>
       </div>
     </div>
     <div class="intro-body">
-      <p>RIMJHIM AI KINGDOM is an AI innovation studio where <strong>production-grade intelligent agents</strong> are designed, built, and deployed from scratch.</p>
-      <p>Every system starts with an architecture — reasoning engines, safety layers, multi-tool orchestration — not just a prompt and an API call.</p>
+      <p>RIMJHIM AI KINGDOM is an AI innovation studio where <strong>production-grade intelligent agents</strong> are designed, built, and deployed from scratch. Every system starts with an architecture — reasoning engines, safety layers, multi-tool orchestration — not just a prompt and an API call.</p>
+      <p>This is where agentic AI meets real-world problems. From autonomous banking assistants to voice-first property agents, every build is <strong>production-grade, explainable, and engineered to act</strong> — not just respond.</p>
     </div>
   </div>
 </section>
 
+<!-- ══ 03 AGENTS ROW ══ -->
 <section class="agents-row-section">
   <div class="container">
     <p class="agents-row-title">Agentic Systems Designed by Rimjhim (Rémy) Singh</p>
     <div class="agents-row">
-      <div class="agent-pill">
+      <div class="agent-pill ap-bank">
         <span class="agent-pill-icon">🏦</span>
         <span class="agent-pill-name">BANKING AGENT</span>
-        <span class="agent-pill-stack">ReAct · RAG</span>
+        <span class="agent-pill-stack">ReAct · RAG · FCA</span>
       </div>
-      <div class="agent-pill">
+      <div class="agent-pill ap-prop">
         <span class="agent-pill-icon">🏙️</span>
         <span class="agent-pill-name">PROPERTY AGENT</span>
         <span class="agent-pill-stack">Voice · FastAPI</span>
       </div>
-      <div class="agent-pill">
+      <div class="agent-pill ap-doc">
         <span class="agent-pill-icon">🏫</span>
         <span class="agent-pill-name">DOC ASSISTANT</span>
-        <span class="agent-pill-stack">ChromaDB</span>
+        <span class="agent-pill-stack">RAG · ChromaDB</span>
       </div>
-      <div class="agent-pill">
+      <div class="agent-pill ap-rest">
         <span class="agent-pill-icon">🍽️</span>
         <span class="agent-pill-name">REVIEW AGENT</span>
         <span class="agent-pill-stack">NLP · GPT-4</span>
       </div>
-      <div class="agent-pill">
+      <div class="agent-pill ap-off">
         <span class="agent-pill-icon">🏢</span>
         <span class="agent-pill-name">EMAIL AGENT</span>
-        <span class="agent-pill-stack">n8n · Gmail</span>
+        <span class="agent-pill-stack">n8n · Gmail API</span>
       </div>
-      <div class="agent-pill">
+      <div class="agent-pill ap-news">
         <span class="agent-pill-icon">📺</span>
         <span class="agent-pill-name">NEWS AGENT</span>
-        <span class="agent-pill-stack">Automation</span>
+        <span class="agent-pill-stack">GPT-4 · Notion</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ... rest of the city and demo sections continue with the new bright styles applied via CSS ... -->
+<!-- ══ 04 AI CITY ══ -->
+<section id="city" class="city-section">
+  <div class="city-bg-grid"></div>
+  <div class="city-scan"></div>
+  <div class="city-content">
 
+    <div class="city-head">
+      <h2>THE AI CITY</h2>
+      <p>EVERY BUILDING IS A REAL AGENTIC SYSTEM · CLICK TO EXPLORE THE PROBLEM IT SOLVES</p>
+    </div>
+    <div class="city-claim-badge">
+      <span class="ccb">WORLD'S FIRST SECTOR-BY-SECTOR AGENTIC AI PROBLEM-SOLUTION NAVIGATOR</span>
+    </div>
+
+    <!-- ISOMETRIC SVG CITY -->
+    <div class="city-svg-wrap">
+      <svg viewBox="0 0 1100 720" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- GROUND PLANE -->
+        <polygon points="550,90 920,280 550,470 180,280" fill="#060d18" stroke="#0f1e30" stroke-width="1.5"/>
+        <line x1="365" y1="185" x2="735" y2="375" stroke="#0d1828" stroke-width="0.6"/>
+        <line x1="550" y1="90" x2="550" y2="470" stroke="#0d1828" stroke-width="0.6"/>
+        <line x1="735" y1="185" x2="365" y2="375" stroke="#0d1828" stroke-width="0.6"/>
+        <line x1="230" y1="240" x2="870" y2="240" stroke="#0d1828" stroke-width="0.5"/>
+        <line x1="230" y1="320" x2="870" y2="320" stroke="#0d1828" stroke-width="0.5"/>
+        <!-- Roads -->
+        <line x1="550" y1="90"  x2="180" y2="280" stroke="#111e35" stroke-width="2.5"/>
+        <line x1="550" y1="90"  x2="920" y2="280" stroke="#111e35" stroke-width="2.5"/>
+        <line x1="180" y1="280" x2="550" y2="470" stroke="#111e35" stroke-width="2.5"/>
+        <line x1="920" y1="280" x2="550" y2="470" stroke="#111e35" stroke-width="2.5"/>
+
+        <!-- ── BANKING TOWER (back-left, tallest) ── -->
+        <g class="bld-g" onclick="openCity('bank')">
+          <ellipse cx="295" cy="340" rx="50" ry="17" fill="#020408" opacity="0.6"/>
+          <polygon points="245,110 295,84 295,322 245,348" fill="#2d1a6e"/>
+          <polygon points="295,84 345,110 345,348 295,322" fill="#4c1d95"/>
+          <polygon points="245,110 295,84 345,110 295,136" fill="#7c3aed"/>
+          <rect x="253" y="148" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.85"/>
+          <rect x="253" y="172" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.7"/>
+          <rect x="253" y="196" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.9"/>
+          <rect x="253" y="220" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.65"/>
+          <rect x="253" y="244" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.8"/>
+          <rect x="253" y="268" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.55"/>
+          <rect x="253" y="292" width="30" height="9" rx="1" fill="#c4b5fd" opacity="0.75"/>
+          <rect x="307" y="148" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.7"/>
+          <rect x="307" y="172" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.9"/>
+          <rect x="307" y="196" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.6"/>
+          <rect x="307" y="220" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.85"/>
+          <rect x="307" y="244" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.7"/>
+          <rect x="307" y="268" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.9"/>
+          <rect x="307" y="292" width="30" height="9" rx="1" fill="#8b5cf6" opacity="0.6"/>
+          <line x1="295" y1="84" x2="295" y2="48" stroke="#7c3aed" stroke-width="2.5"/>
+          <circle cx="295" cy="46" r="5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.1;1" dur="1.4s" repeatCount="indefinite"/></circle>
+          <text x="295" y="368" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#a78bfa" letter-spacing="1" font-weight="700">🏦 BANKING TOWER</text>
+          <text x="295" y="386" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── NEWS CHANNEL HQ (back-center) ── -->
+        <g class="bld-g" onclick="openCity('news')">
+          <ellipse cx="455" cy="196" rx="36" ry="13" fill="#020408" opacity="0.6"/>
+          <polygon points="419,112 455,94 455,188 419,206" fill="#1e3a5f"/>
+          <polygon points="455,94 491,112 491,206 455,188" fill="#1e4d8c"/>
+          <polygon points="419,112 455,94 491,112 455,130" fill="#3b82f6"/>
+          <rect x="425" y="136" width="22" height="8" rx="1" fill="#93c5fd" opacity="0.8"/>
+          <rect x="425" y="156" width="22" height="8" rx="1" fill="#93c5fd" opacity="0.6"/>
+          <rect x="425" y="176" width="22" height="8" rx="1" fill="#93c5fd" opacity="0.9"/>
+          <rect x="461" y="136" width="22" height="8" rx="1" fill="#60a5fa" opacity="0.7"/>
+          <rect x="461" y="156" width="22" height="8" rx="1" fill="#60a5fa" opacity="0.9"/>
+          <rect x="461" y="176" width="22" height="8" rx="1" fill="#60a5fa" opacity="0.6"/>
+          <line x1="455" y1="94" x2="455" y2="62" stroke="#3b82f6" stroke-width="2.5"/>
+          <line x1="438" y1="78" x2="472" y2="78" stroke="#3b82f6" stroke-width="1.5"/>
+          <line x1="445" y1="70" x2="465" y2="70" stroke="#3b82f6" stroke-width="1.5"/>
+          <circle cx="455" cy="60" r="4" fill="#93c5fd"><animate attributeName="opacity" values="1;0.1;1" dur="0.9s" repeatCount="indefinite"/></circle>
+          <text x="455" y="222" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#60a5fa" letter-spacing="1" font-weight="700">📺 NEWS HQ</text>
+          <text x="455" y="240" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── PROPERTY TOWERS (back-right) ── -->
+        <g class="bld-g" onclick="openCity('prop')">
+          <ellipse cx="670" cy="250" rx="44" ry="15" fill="#020408" opacity="0.6"/>
+          <polygon points="626,118 670,96 670,238 626,260" fill="#0e4f6e"/>
+          <polygon points="670,96 714,118 714,260 670,238" fill="#0e7490"/>
+          <polygon points="626,118 670,96 714,118 670,140" fill="#06b6d4"/>
+          <rect x="634" y="152" width="24" height="8" rx="1" fill="#67e8f9" opacity="0.85"/>
+          <rect x="634" y="174" width="24" height="8" rx="1" fill="#67e8f9" opacity="0.65"/>
+          <rect x="634" y="196" width="24" height="8" rx="1" fill="#67e8f9" opacity="0.9"/>
+          <rect x="634" y="218" width="24" height="8" rx="1" fill="#67e8f9" opacity="0.7"/>
+          <rect x="678" y="152" width="24" height="8" rx="1" fill="#22d3ee" opacity="0.7"/>
+          <rect x="678" y="174" width="24" height="8" rx="1" fill="#22d3ee" opacity="0.9"/>
+          <rect x="678" y="196" width="24" height="8" rx="1" fill="#22d3ee" opacity="0.6"/>
+          <rect x="678" y="218" width="24" height="8" rx="1" fill="#22d3ee" opacity="0.85"/>
+          <line x1="670" y1="96" x2="670" y2="64" stroke="#06b6d4" stroke-width="2.5"/>
+          <circle cx="670" cy="62" r="5" fill="#67e8f9"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+          <text x="670" y="278" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#06b6d4" letter-spacing="1" font-weight="700">🏙️ PROPERTY TOWERS</text>
+          <text x="670" y="296" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── KNOWLEDGE ACADEMY (mid-left) ── -->
+        <g class="bld-g" onclick="openCity('school')">
+          <ellipse cx="326" cy="418" rx="44" ry="15" fill="#020408" opacity="0.6"/>
+          <polygon points="282,274 326,252 326,406 282,428" fill="#78350f"/>
+          <polygon points="326,252 370,274 370,428 326,406" fill="#92400e"/>
+          <polygon points="282,274 326,252 370,274 326,296" fill="#f59e0b"/>
+          <ellipse cx="326" cy="252" rx="24" ry="10" fill="#fcd34d" opacity="0.5"/>
+          <rect x="290" y="306" width="26" height="8" rx="1" fill="#fcd34d" opacity="0.9"/>
+          <rect x="290" y="326" width="26" height="8" rx="1" fill="#fcd34d" opacity="0.7"/>
+          <rect x="290" y="346" width="26" height="8" rx="1" fill="#fcd34d" opacity="0.85"/>
+          <rect x="290" y="366" width="26" height="8" rx="1" fill="#fcd34d" opacity="0.65"/>
+          <rect x="290" y="386" width="26" height="8" rx="1" fill="#fcd34d" opacity="0.8"/>
+          <rect x="334" y="306" width="26" height="8" rx="1" fill="#fbbf24" opacity="0.7"/>
+          <rect x="334" y="326" width="26" height="8" rx="1" fill="#fbbf24" opacity="0.9"/>
+          <rect x="334" y="346" width="26" height="8" rx="1" fill="#fbbf24" opacity="0.6"/>
+          <rect x="334" y="366" width="26" height="8" rx="1" fill="#fbbf24" opacity="0.85"/>
+          <rect x="334" y="386" width="26" height="8" rx="1" fill="#fbbf24" opacity="0.7"/>
+          <text x="326" y="448" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#f59e0b" letter-spacing="1" font-weight="700">🏫 KNOWLEDGE ACADEMY</text>
+          <text x="326" y="466" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── CORPORATE OFFICE (mid-right) ── -->
+        <g class="bld-g" onclick="openCity('office')">
+          <ellipse cx="762" cy="388" rx="44" ry="15" fill="#020408" opacity="0.6"/>
+          <polygon points="718,248 762,226 762,372 718,394" fill="#064e3b"/>
+          <polygon points="762,226 806,248 806,394 762,372" fill="#065f46"/>
+          <polygon points="718,248 762,226 806,248 762,270" fill="#10b981"/>
+          <rect x="726" y="282" width="26" height="8" rx="1" fill="#6ee7b7" opacity="0.9"/>
+          <rect x="726" y="304" width="26" height="8" rx="1" fill="#6ee7b7" opacity="0.65"/>
+          <rect x="726" y="326" width="26" height="8" rx="1" fill="#6ee7b7" opacity="0.85"/>
+          <rect x="726" y="348" width="26" height="8" rx="1" fill="#6ee7b7" opacity="0.7"/>
+          <rect x="770" y="282" width="26" height="8" rx="1" fill="#34d399" opacity="0.7"/>
+          <rect x="770" y="304" width="26" height="8" rx="1" fill="#34d399" opacity="0.9"/>
+          <rect x="770" y="326" width="26" height="8" rx="1" fill="#34d399" opacity="0.6"/>
+          <rect x="770" y="348" width="26" height="8" rx="1" fill="#34d399" opacity="0.85"/>
+          <line x1="762" y1="226" x2="762" y2="194" stroke="#10b981" stroke-width="2.5"/>
+          <circle cx="762" cy="192" r="5" fill="#6ee7b7"><animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+          <text x="762" y="414" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#10b981" letter-spacing="1" font-weight="700">🏢 CORPORATE OFFICE</text>
+          <text x="762" y="432" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── RESTAURANT QUARTER (front-center) ── -->
+        <g class="bld-g" onclick="openCity('rest')">
+          <ellipse cx="548" cy="496" rx="50" ry="17" fill="#020408" opacity="0.6"/>
+          <polygon points="498,348 548,324 548,480 498,504" fill="#7f1d1d"/>
+          <polygon points="548,324 598,348 598,504 548,480" fill="#991b1b"/>
+          <polygon points="498,348 548,324 598,348 548,372" fill="#ef4444"/>
+          <rect x="506" y="382" width="30" height="8" rx="1" fill="#fca5a5" opacity="0.9"/>
+          <rect x="506" y="404" width="30" height="8" rx="1" fill="#fca5a5" opacity="0.65"/>
+          <rect x="506" y="426" width="30" height="8" rx="1" fill="#fca5a5" opacity="0.85"/>
+          <rect x="506" y="448" width="30" height="8" rx="1" fill="#fca5a5" opacity="0.7"/>
+          <rect x="552" y="382" width="30" height="8" rx="1" fill="#f87171" opacity="0.7"/>
+          <rect x="552" y="404" width="30" height="8" rx="1" fill="#f87171" opacity="0.9"/>
+          <rect x="552" y="426" width="30" height="8" rx="1" fill="#f87171" opacity="0.6"/>
+          <rect x="552" y="448" width="30" height="8" rx="1" fill="#f87171" opacity="0.85"/>
+          <text x="548" y="524" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#ef4444" letter-spacing="1" font-weight="700">🍽️ RESTAURANT QUARTER</text>
+          <text x="548" y="542" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#334155">[ click to explore ]</text>
+        </g>
+
+        <!-- ── SAFETY HQ CENTER NODE ── -->
+        <circle cx="548" cy="308" r="14" fill="#0d0618" stroke="#7c3aed" stroke-width="2"/>
+        <circle cx="548" cy="308" r="7" fill="#7c3aed" opacity="0.7">
+          <animate attributeName="r" values="7;13;7" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <text x="548" y="295" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#a78bfa" font-weight="700">🛡️ SAFETY HQ</text>
+        <text x="548" y="330" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="10" fill="#1e3a5f">six-gate core</text>
+
+        <!-- POWER LINES -->
+        <line x1="295" y1="230" x2="455" y2="170" stroke="#7c3aed" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="2s" repeatCount="indefinite"/></line>
+        <line x1="455" y1="170" x2="548" y2="285" stroke="#3b82f6" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="2.5s" repeatCount="indefinite"/></line>
+        <line x1="548" y1="285" x2="670" y2="200" stroke="#06b6d4" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="3s" repeatCount="indefinite"/></line>
+        <line x1="326" y1="355" x2="548" y2="308" stroke="#f59e0b" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.8s" repeatCount="indefinite"/></line>
+        <line x1="548" y1="308" x2="762" y2="318" stroke="#10b981" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="2.2s" repeatCount="indefinite"/></line>
+        <line x1="548" y1="308" x2="548" y2="370" stroke="#ef4444" stroke-width="1" stroke-dasharray="8 4" opacity="0.6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.6s" repeatCount="indefinite"/></line>
+
+        <!-- District labels -->
+        <text x="210" y="190" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#1e3a5f" opacity="0.8" letter-spacing="3">FINANCIAL DISTRICT</text>
+        <text x="870" y="310" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#1e3a5f" opacity="0.8" letter-spacing="3">ENTERPRISE ZONE</text>
+        <text x="548" y="610" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="11" fill="#1e3a5f" opacity="0.8" letter-spacing="3">HOSPITALITY QUARTER</text>
+
+      </svg>
+    </div>
+
+    <!-- PROBLEM-SOLUTION PANEL -->
+    <div class="problem-panel" id="cityPanel">
+      <div class="pp-header">
+        <div>
+          <div class="pp-tag" id="pp-tag"></div>
+          <div class="pp-title" id="pp-title"></div>
+        </div>
+        <button class="pp-close" onclick="closeCity()">✕</button>
+      </div>
+      <div class="pp-grid">
+        <div class="pp-box pp-box-prob">
+          <div class="pp-box-label pp-box-label-prob">// THE PROBLEM</div>
+          <ul class="pp-problem-list" id="pp-problems"></ul>
+        </div>
+        <div class="pp-box pp-box-sol">
+          <div class="pp-box-label pp-box-label-sol">// RIMJHIM'S SOLUTION</div>
+          <p class="pp-sol-text" id="pp-solution"></p>
+          <div class="pp-stack" id="pp-stack"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ 05 DEMO ══ -->
+<section id="demo" class="demo-section">
+  <div class="container">
+    <p class="section-eyebrow">LIVE DEMO</p>
+    <h2 class="section-title">AI AGENTS IN ACTION</h2>
+    <p class="section-sub">Designed &amp; Built by Rimjhim (Rémy) Singh</p>
+    <div class="demo-grid">
+      <div class="demo-card">
+        <div class="demo-card-inner">
+          <div class="demo-card-name">AGENTIC AI EMAIL ASSISTANT</div>
+          <a href="https://drive.google.com/file/d/1eT5u2u15LWXnDHJVYhNHkCs_yCPnVOqI/view" target="_blank" class="demo-thumb">
+            <img src="demothumbnail.png" alt="AI Email Agent Demo">
+            <div class="demo-play">▶</div>
+          </a>
+          <p class="demo-caption">CLICK TO WATCH THE FULL DEMO</p>
+        </div>
+      </div>
+      <div class="demo-card">
+        <div class="demo-card-inner">
+          <div class="demo-card-name">UK'S FIRST VOICE AGENTIC PROPTECH APP</div>
+          <p class="demo-card-desc">A Voice-First Agentic AI that understands natural language, asks intelligent follow-up questions like a human estate agent, and reasons across multiple constraints simultaneously.</p>
+          <a href="https://drive.google.com/file/d/1GlElQoAcgwKmGgKf7VGZEnQIrPIxzjdm/view" target="_blank" class="demo-thumb">
+            <img src="propertythumbnail.png" alt="Property Agent Demo">
+            <div class="demo-play">▶</div>
+          </a>
+          <p class="demo-caption">CLICK TO WATCH THE FULL DEMO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 06 FOUNDER ══ -->
 <section id="founder" class="founder-section">
   <div class="container">
     <p class="section-eyebrow">MEET THE FOUNDER</p>
+    <h2 class="section-title">RIMJHIM (RÉMY) SINGH</h2>
     <div class="founder-grid">
       <div class="founder-photo">
-        <img src="IMG_2.jpg" alt="Rimjhim Singh" style="width:100%; border: 3px solid var(--accent2); border-radius: 8px;">
+        <img src="IMG_2.jpg" alt="Rimjhim Singh — AI Engineer & Founder">
       </div>
       <div class="founder-bio">
         <h3>Rimjhim (Rémy) Singh</h3>
         <p class="founder-title">AI ENGINEER · AGENTIC AI ARCHITECT · FOUNDER</p>
-        <p>Rimjhim (Rémy) Singh is a London-based AI Engineer and founder of RIMJHIM AI KINGDOM. She specializes in <strong>Agentic AI, LLM automation, and RAG pipelines</strong>.</p>
+        <p>Rimjhim (Rémy) Singh is a London-based AI Engineer, Technical AI Product Architect, and founder of RIMJHIM AI KINGDOM — an AI Innovation Studio building next-generation Agentic AI systems, intelligent automation products, and enterprise-grade AI solutions. She is the sole architect and developer of this website and every system in it.</p>
+        <p>She specialises in Agentic AI, LLM automation, NLP, RAG pipelines, and scalable machine learning systems — designing intelligent solutions across the UK, Australia, Asia, and North America. Her work focuses on AI systems capable of reasoning, planning, workflow orchestration, and real-world decision making.</p>
+        <p>She holds an MSc in Data Science from the University of Warwick (Russell Group) and a Master's in Quantitative Economics. Her work has delivered: 95%+ workflow acceleration, 60%+ productivity improvements, and 98% faster document analysis for enterprise teams. She has independently designed 10+ production-grade AI agents.</p>
         <div class="founder-quote">
-          <p>"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem."</p>
+          <p>"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."</p>
         </div>
+        <p>Based in London — building RIMJHIM AI KINGDOM as a space for innovation, technical excellence, and ambitious AI product development.</p>
         <div class="founder-links">
-          <a href="#" class="founder-link">LINKEDIN</a>
-          <a href="#" class="founder-link">GITHUB</a>
+          <a href="https://www.linkedin.com/in/rimjhim-ri" target="_blank" class="founder-link">LINKEDIN</a>
+          <a href="https://github.com/rimjhimsinghcoder1" target="_blank" class="founder-link">GITHUB</a>
+          <a href="https://www.linkedin.com/company/rimjhim-ai-kingdom" target="_blank" class="founder-link">COMPANY PAGE</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══ FOOTER ══ -->
 <footer>
   <div class="footer-logo">RIMJHIM AI KINGDOM</div>
   <div class="footer-tagline">"Where Knowledge Flows Like Raindrops"</div>
   <div class="footer-links">
-    <a href="#">LinkedIn</a>
-    <a href="#">GitHub</a>
+    <a href="https://www.linkedin.com/in/rimjhim-ri" target="_blank">LinkedIn</a>
+    <a href="https://github.com/rimjhimsinghcoder1" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/company/rimjhim-ai-kingdom" target="_blank">Company Page</a>
+    <a href="https://medium.com/@rimjhimsingh.professional" target="_blank">Medium Articles</a>
   </div>
-  <p style="color:white; margin-top:20px; font-size:11px; font-family: 'Share Tech Mono'; letter-spacing: 2px;">© 2026 · BUILT WITH PRECISION BY RIMJHIM SINGH</p>
+  <p style="font-family:'Share Tech Mono',monospace;font-size:9px;color:#1e2d45;margin-top:16px;letter-spacing:2px;">RIMJHIM AI KINGDOM © 2025 · BUILT WITH PRECISION · POWERED BY CURIOSITY</p>
 </footer>
 
+<script>
+/* ── CITY DATA ── */
+const cityData = {
+  bank: {
+    tag:'🏦 FINTECH · AGENTIC AI · FCA/GDPR', title:'BANKING TOWER', color:'#a78bfa',
+    problems:['Our chatbot only follows scripted flows — it can\'t reason or adapt','Compliance checks are manual and slow — real risk of human error','Customer escalation is unpredictable — we lose trust at critical moments'],
+    solution:'Rimjhim built an Intelligent Banking Agent on a ReAct Orchestration Engine with a Six-Gate Safety System — verifying every action against FCA/GDPR rules automatically. Confidence-based routing to human agents when certainty drops below threshold. Zero unsafe actions.',
+    stack:['ReAct Engine','LangChain','RAG','6-Gate Safety','FCA/GDPR','Python']
+  },
+  prop: {
+    tag:'🏙️ PROPTECH · VOICE-FIRST · AGENTIC', title:'PROPERTY TOWERS', color:'#67e8f9',
+    problems:['Our search is keyword-based — users can\'t search naturally or conversationally','We can\'t handle complex multi-constraint queries like "near Tube, under £400k, 2-bed"','No voice interface — competitors are already moving ahead'],
+    solution:'Rimjhim built the UK\'s first Voice-First Agentic Property Agent — understanding natural speech, reasoning across 3+ simultaneous constraints, asking clarifying questions like a human estate agent. Separate voice and text reasoning pipelines via FastAPI.',
+    stack:['Web Speech API','FastAPI','Dual-Pipeline','Intent-Gating','PostgreSQL','Python']
+  },
+  school: {
+    tag:'🏫 PRODUCTIVITY · RAG + AGENT', title:'KNOWLEDGE ACADEMY', color:'#fcd34d',
+    problems:['Staff waste hours searching through documents manually every day','AI answers hallucinate — we can\'t trust the outputs for important decisions','API costs are too high for document processing at enterprise scale'],
+    solution:'Rimjhim built an AI Document Assistant with dual-engine RAG + ReAct — zero hallucinations, full source attribution, local embeddings reducing cost by 10× vs standard implementations. Automatic fallback from agent to RAG on failure.',
+    stack:['ChromaDB','SentenceTransformers','ReAct Agent','Streamlit','Local Embeddings','Python']
+  },
+  rest: {
+    tag:'🍽️ HOSPITALITY · NLP · HUMAN-IN-LOOP', title:'RESTAURANT QUARTER', color:'#fca5a5',
+    problems:['Responding to 500+ reviews manually takes the team hours every week','We miss crisis reviews — one bad viral post can damage the entire brand','AI responses don\'t sound like our brand voice — they feel generic'],
+    solution:'Rimjhim built an AI Review Response Agent with sentiment analysis, crisis detection, and brand-voice generation — 92% sentiment accuracy across 500+ reviews tested. All responses routed through a human-in-loop approval dashboard.',
+    stack:['GPT-4','FastAPI','React','Crisis Detection','NLP Pipeline','Python']
+  },
+  office: {
+    tag:'🏢 AUTOMATION · AGENTIC WORKFLOW', title:'CORPORATE OFFICE', color:'#6ee7b7',
+    problems:['Our team spends 3+ hours daily on email triage alone — it\'s unsustainable','VIP emails get buried — we miss critical follow-ups that cost us relationships','Drafting context-aware replies takes too long at volume'],
+    solution:'Rimjhim built an Intelligent Email Agent with CRM integration, thread history extraction, and sentiment-matched draft replies — 87% reduction in daily email handling time. Human-in-loop approval for VIP contacts.',
+    stack:['Gmail API','n8n','GPT-4','Few-shot Learning','CRM Integration','Python']
+  },
+  news: {
+    tag:'📺 MEDIA · LLM PIPELINE · AUTOMATION', title:'NEWS CHANNEL HQ', color:'#93c5fd',
+    problems:['We can\'t monitor 20+ competitor and industry sources manually every day','Intelligence is always 24hrs late — decisions are made on stale information','Summarising and distributing articles takes a full-time person'],
+    solution:'Rimjhim built an AI News Intelligence System — autonomous pipeline running every 4 hours, aggregating 20+ sources, compressing via GPT-4, syncing to a searchable Notion knowledge base. 4× article coverage with near-zero manual overhead.',
+    stack:['n8n','News API','GPT-4','Notion API','Automation Pipeline','Python']
+  }
+};
+
+function openCity(key) {
+  const d = cityData[key];
+  document.getElementById('pp-tag').textContent = d.tag;
+  const title = document.getElementById('pp-title');
+  title.textContent = d.title;
+  title.style.color = d.color;
+  document.getElementById('pp-problems').innerHTML = d.problems.map(p=>`<li>${p}</li>`).join('');
+  document.getElementById('pp-solution').textContent = d.solution;
+  document.getElementById('pp-stack').innerHTML = d.stack.map(s=>`<span style="color:${d.color};border-color:${d.color}50;background:${d.color}10">${s}</span>`).join('');
+  const panel = document.getElementById('cityPanel');
+  panel.classList.add('open');
+  setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),100);
+}
+
+function closeCity() {
+  document.getElementById('cityPanel').classList.remove('open');
+}
+</script>
 </body>
 </html>
