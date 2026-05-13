@@ -74,7 +74,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 32px;display:fl
 .intro-title{font-family:'Orbitron',monospace;font-size:clamp(32px,5vw,60px);font-weight:900;letter-spacing:4px;text-align:center;background:linear-gradient(135deg,var(--glow),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:28px;line-height:1.2;}
 .world-first-badge{display:flex;align-items:center;justify-content:center;margin:0 auto 40px;}
 .wfb-inner{display:inline-flex;align-items:center;gap:14px;padding:14px 32px;border:1px solid rgba(124,58,237,.6);border-radius:2px;background:rgba(124,58,237,.1);}
-.wfb-label{font-family:'Share Tech Mono',monospace;font-size:16px;letter-spacing:3px;color:#e2e8f0;}
+.wfb-label{font-family:'Share Tech Mono',monospace;font-size:clamp(10px,1.8vw,16px);letter-spacing:2px;color:#e2e8f0;text-align:center;}
 .wfb-dot{width:8px;height:8px;border-radius:50%;background:var(--accent3);animation:blink 1.5s infinite;}
 .intro-body{max-width:900px;margin:0 auto;text-align:center;}
 .intro-body p{font-size:20px;line-height:2;color:#e2e8f0;margin-bottom:18px;}
@@ -104,10 +104,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 32px;display:fl
 .city-scan{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:.3;animation:scan 8s linear infinite;pointer-events:none;}
 .city-content{position:relative;z-index:10;width:100%;padding:80px 0 60px;}
 .city-head{text-align:center;margin-bottom:16px;padding:0 40px;}
-.city-head h2{font-family:'Orbitron',monospace;font-size:clamp(42px,8vw,96px);font-weight:900;letter-spacing:12px;background:linear-gradient(135deg,var(--glow),var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:14px;}
-.city-head p{font-family:'Share Tech Mono',monospace;font-size:16px;color:#e2e8f0;letter-spacing:4px;}
-.city-claim-badge{display:flex;justify-content:center;margin:20px 0 40px;padding:0 40px;}
-.ccb{font-family:'Share Tech Mono',monospace;font-size:15px;letter-spacing:2px;color:#e2e8f0;padding:14px 32px;border:1px solid rgba(124,58,237,.5);background:rgba(124,58,237,.12);border-radius:2px;}
+.city-head h2{font-family:'Orbitron',monospace;font-size:clamp(22px,6vw,96px);font-weight:900;letter-spacing:clamp(2px,2vw,12px);background:linear-gradient(135deg,var(--glow),var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:14px;}
+.city-head p{font-family:'Share Tech Mono',monospace;font-size:clamp(10px,2vw,16px);color:#e2e8f0;letter-spacing:clamp(1px,1vw,4px);}
+.city-claim-badge{display:flex;justify-content:center;margin:20px 0 40px;padding:0 16px;}
+.ccb{font-family:'Share Tech Mono',monospace;font-size:clamp(9px,1.4vw,15px);letter-spacing:1px;color:#e2e8f0;padding:10px 20px;border:1px solid rgba(124,58,237,.5);background:rgba(124,58,237,.12);border-radius:2px;text-align:center;line-height:1.6;}
 
 /* ISOMETRIC CITY SVG WRAPPER */
 .city-svg-wrap{width:100%;overflow:visible;margin:0 auto;position:relative;}
@@ -243,11 +243,11 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
 <section id="intro" class="intro-section">
   <div class="container">
     <p class="intro-eyebrow">FOUNDED BY RIMJHIM (RÉMY) SINGH · LONDON</p>
-    <h1 class="intro-title">WELCOME TO RIMJHIM AI KINGDOM</h1>
+    <h1 class="intro-title">WELCOME TO RIMJHIM AI KINGDOM™</h1>
     <div class="world-first-badge">
       <div class="wfb-inner">
         <div class="wfb-dot"></div>
-        <span class="wfb-label">WORLD'S FIRST NAVIGABLE & INTERACTIVE AGENTIC AI VIRTUAL CITY EXPERIENCE· BUILT SOLO</span>
+        <span class="wfb-label">WORLD'S FIRST NAVIGABLE AGENTIC AI ECOSYSTEM · BUILT SOLO</span>
         <div class="wfb-dot"></div>
       </div>
     </div>
