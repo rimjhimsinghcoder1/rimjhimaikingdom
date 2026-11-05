@@ -25,6 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --void:#02040a; --deep:#060d1a; --surface:#0d1b2e; --panel:#0f1e35;
@@ -211,6 +212,74 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
 .footer-links a{font-family:'Share Tech Mono',monospace;font-size:13px;color:#94a3b8;text-decoration:none;letter-spacing:1px;transition:color .2s;}
 .footer-links a:hover{color:var(--accent2);}
 
+
+/* ══════════════════════════════════════════
+   RIKANVERSE SECTION (merged from rikanverse.com)
+   All styles scoped under .rkv so they never clash
+   ══════════════════════════════════════════ */
+.rkv{--navy:#050d1f;--blue:#1a56db;--blue-light:#7eb8f7;--gold:#c9a96e;--white:#ffffff;--glass:rgba(255,255,255,0.04);--border:rgba(126,184,247,0.15);
+  position:relative;z-index:10;background:var(--navy);color:var(--white);font-family:'Outfit',sans-serif;border-top:1px solid var(--border);scroll-margin-top:52px;}
+.rkv-topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:20px 60px;border-bottom:1px solid var(--border);}
+.rkv-nav-cta{background:linear-gradient(135deg,var(--blue),#0a2463);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-size:.9rem;font-weight:500;}
+.rkv-btn-primary{background:linear-gradient(135deg,var(--blue),#0a2463);color:#fff;padding:16px 36px;border-radius:10px;text-decoration:none;font-weight:600;font-size:1rem;display:inline-block;transition:opacity .2s,transform .2s;}
+.rkv-btn-primary:hover{opacity:.9;transform:translateY(-2px);}
+.rkv-problem{padding:80px 60px;max-width:900px;margin:0 auto;}
+.rkv-problem-box{background:var(--glass);border:1px solid var(--border);border-radius:20px;padding:48px;}
+.rkv-problem-box h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;margin-bottom:24px;color:var(--gold);}
+.rkv-problem-list{list-style:none;display:flex;flex-direction:column;gap:14px;}
+.rkv-problem-list li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:rgba(255,255,255,.7);line-height:1.6;}
+.rkv-problem-list li::before{content:'→';color:var(--blue-light);font-weight:700;flex-shrink:0;margin-top:2px;}
+.rkv-features{padding:80px 60px;max-width:1200px;margin:0 auto;}
+.rkv-section-label,.rkv-section-eyebrow{text-align:center;color:var(--gold);font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;}
+.rkv-section-title{text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;margin-bottom:16px;}
+.rkv-section-sub{text-align:center;color:rgba(255,255,255,.5);font-size:.95rem;margin-bottom:50px;max-width:600px;margin-left:auto;margin-right:auto;}
+.rkv-features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.rkv-feature-card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:32px;backdrop-filter:blur(10px);transition:border-color .3s,transform .3s;}
+.rkv-feature-card:hover{border-color:rgba(126,184,247,.4);transform:translateY(-4px);}
+.rkv-feature-card h3{font-size:1.05rem;font-weight:600;margin-bottom:10px;}
+.rkv-feature-card p{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7;}
+.rkv-for-who{padding:80px 60px;max-width:1200px;margin:0 auto;}
+.rkv-who-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:50px;}
+.rkv-who-card{background:var(--glass);border:1px solid var(--border);border-radius:20px;padding:40px;}
+.rkv-who-card.rkv-landlord{border-color:rgba(201,169,110,.2);}
+.rkv-who-card h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;margin-bottom:14px;}
+.rkv-who-card p{color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:20px;font-size:.9rem;}
+.rkv-who-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.rkv-who-list li{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.5;}
+.rkv-who-list li::before{content:'✓';color:var(--blue-light);font-weight:700;flex-shrink:0;}
+.rkv-founder-box{display:flex;gap:40px;align-items:flex-start;}
+.rkv-founder-photo{flex:0 0 280px;}
+.rkv-founder-photo img{width:100%;border-radius:16px;border:1px solid var(--border);box-shadow:0 20px 50px rgba(0,0,0,.4);object-fit:cover;}
+.rkv-founder-text{flex:1;}
+.rkv-demos{padding:80px 60px;max-width:1200px;margin:0 auto;}
+.rkv-demos-grid,.rkv-demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-top:50px;}
+.rkv-demo-card{background:var(--glass);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
+.rkv-demo-video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}
+.rkv-demo-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
+.rkv-demo-info{padding:20px 24px;}
+.rkv-demo-info h3{font-size:1rem;font-weight:600;margin-bottom:6px;}
+.rkv-demo-info p{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.6;}
+.rkv-demo-section{padding:80px 60px;max-width:1200px;margin:0 auto;}
+.rkv-container{width:100%;}
+.rkv-demo-card-inner{padding:24px;}
+.rkv-demo-card-name{font-size:1rem;font-weight:600;letter-spacing:.5px;margin-bottom:12px;text-transform:uppercase;}
+.rkv-demo-card-desc{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:16px;}
+.rkv-demo-thumb{display:block;position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+.rkv-demo-thumb img{display:block;width:100%;height:220px;object-fit:cover;}
+.rkv-demo-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;background:rgba(5,13,31,.7);border:1px solid rgba(255,255,255,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#fff;transition:background .2s,transform .2s;}
+.rkv-demo-thumb:hover .rkv-demo-play{background:var(--blue);transform:translate(-50%,-50%) scale(1.08);}
+.rkv-demo-caption{text-align:center;font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:12px;}
+@media(max-width:768px){
+  .rkv-topbar{padding:16px 20px;justify-content:center;}
+  .rkv-features,.rkv-for-who,.rkv-demos,.rkv-problem,.rkv-demo-section{padding:50px 20px;}
+  .rkv-problem-box,.rkv-who-card{padding:28px 22px;}
+  .rkv-who-grid,.rkv-demos-grid,.rkv-demo-grid{grid-template-columns:1fr;}
+  .rkv-founder-box{flex-direction:column;align-items:center;padding:28px 22px!important;}
+  .rkv-founder-photo{flex:0 0 auto;max-width:220px;}
+  .rkv section[style*="padding:80px 60px"],.rkv section[style*="padding:40px 60px"],.rkv section[style*="padding:100px 40px"]{padding-left:20px!important;padding-right:20px!important;}
+}
+@media(max-width:400px){.rkv-demos-grid,.rkv-demo-grid,.rkv-features-grid{grid-template-columns:1fr;}.rkv-demo-card{min-width:0;}}
+
 /* MOBILE NAV HIDE */
 @media(max-width:768px){.nav-links{display:none;}.nav-status{display:none;}}
 </style>
@@ -228,6 +297,7 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
     <li><a href="#city">AI CITY</a></li>
     <li><a href="#articles">KNOWLEDGE</a></li>
     <li><a href="#demo">DEMO</a></li>
+    <li><a href="#rikanverse">RIKANVERSE</a></li>
     <li><a href="#founder">FOUNDER</a></li>
   </ul>
   <div class="nav-status"><span class="dot"></span>SYSTEMS ONLINE</div>
@@ -682,79 +752,217 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
   </div>
 </section>
 
-<!-- ══ 08 DEMO ══ -->
-<section id="demo" class="demo-section">
-  <div class="container">
-    <p class="section-eyebrow">SEE IT IN ACTION</p>
-    <h2 class="section-title">AGENTIC AI APPS IN ACTION</h2>
-    <p class="section-sub">Designed &amp; Built by Rimjhim (Rémy) Singh</p>
-    <div class="demo-grid">
-      <div class="demo-card">
-        <div class="demo-card-inner">
-          <div class="demo-card-name">E-COMMERCE AGENTIC AI SOLUTION - Customer Service </div>
-          <a href="https://drive.google.com/file/d/1eT5u2u15LWXnDHJVYhNHkCs_yCPnVOqI/view" target="_blank" class="demo-thumb">
-            <img src="demothumbnail.png" alt="AI Email Agent Demo">
-            <div class="demo-play">▶</div>
+<!-- ══ AGENTIC AI APPS IN ACTION (moved above Rikanverse) ══ -->
+<div class="rkv">
+<section id="demo" class="rkv-demo-section" style="scroll-margin-top:60px;">
+  <div class="rkv-container">
+    <p class="rkv-section-eyebrow">Other AI Products by Rikanverse Ltd</p>
+    <h2 class="rkv-section-title">AGENTIC AI APPS IN ACTION</h2>
+    <p class="rkv-section-sub">Designed &amp; Built by Rimjhim (Rémy) Singh</p>
+
+    <div class="rkv-demo-grid">
+
+      <div class="rkv-demo-card">
+        <div class="rkv-demo-card-inner">
+          <div class="rkv-demo-card-name">E-COMMERCE AGENTIC AI SOLUTION - Customer Service</div>
+          <a href="https://drive.google.com/file/d/1eT5u2u15LWXnDHJVYhNHkCs_yCPnVOqI/view" target="_blank" class="rkv-demo-thumb">
+            <img src="https://rikanverse.com/demothumbnail.png" alt="E-commerce Agentic AI Demo">
+            <div class="rkv-demo-play">▶</div>
           </a>
-          <p class="demo-caption">CLICK TO WATCH THE FULL DEMO</p>
+          <p class="rkv-demo-caption">CLICK TO WATCH THE FULL DEMO</p>
         </div>
       </div>
-<div class="demo-card">
-        <div class="demo-card-inner">
-          <div class="demo-card-name">PROPERTY MARKET AGENTIC AI SOLUTION - Rikanverse Agentic AI App </div>
-          <p class="demo-card-desc">A Voice-First Agentic AI that understands natural language, asks intelligent follow-up questions like a human estate agent, and reasons across multiple constraints simultaneously.</p>
-          <a href="https://drive.google.com/file/d/1GlElQoAcgwKmGgKf7VGZEnQIrPIxzjdm/view" target="_blank" class="demo-thumb">
-            <img src="propertythumbnail.png" alt="Property Agent Demo">
-            <div class="demo-play">▶</div>
-          </a>
-          <p class="demo-caption">CLICK TO WATCH THE FULL DEMO</p>
+
+      <div class="rkv-demo-card">
+        <div class="rkv-demo-card-inner">
+          <div class="rkv-demo-card-name">FINTECH &amp; BANKING AGENTIC AI SOLUTION</div>
+          <p class="rkv-demo-card-desc">Intelligent Banking Agent on a ReAct Orchestration Engine with a Six-Gate Safety System</p>
+          <div class="rkv-demo-thumb">
+            <img src="https://rikanverse.com/fintechthumbnail.png" alt="Fintech &amp; Banking Agentic AI Solution">
+          </div>
         </div>
       </div>
-      <div class="demo-card">
-        <div class="demo-card-inner">
-          <div class="demo-card-name">HOSPITALITY INDUSTRY AGENTIC AI APP SOLUTION: HOTEL REVIEW AUTOMATION</div>
-          <p class="demo-card-desc">A 4-layer production system automating review management with strict human-in-the-loop workflow — 92% sentiment accuracy, 2-3 second end-to-end processing, and active crisis detection for compliance risks.</p>
-          <a href="https://drive.google.com/file/d/1Pa5gLN3110tsfWyOXLf_sQpxd7TRXbQS/view" target="_blank" class="demo-thumb">
-            <img src="reviewthumbnail.png" alt="AI Review Response Agent Demo">
-            <div class="demo-play">▶</div>
+
+      <div class="rkv-demo-card">
+        <div class="rkv-demo-card-inner">
+          <div class="rkv-demo-card-name">HOSPITALITY INDUSTRY AGENTIC AI APP SOLUTION: HOTEL REVIEW AUTOMATION</div>
+          <p class="rkv-demo-card-desc">A 4-layer production system automating review management with strict human-in-the-loop workflow — 92% sentiment accuracy, 2-3 second end-to-end processing, and active crisis detection for compliance risks.</p>
+          <a href="https://drive.google.com/file/d/1Pa5gLN3110tsfWyOXLf_sQpxd7TRXbQS/view" target="_blank" class="rkv-demo-thumb">
+            <img src="https://rikanverse.com/reviewthumbnail.png" alt="AI Review Response Agent Demo">
+            <div class="rkv-demo-play">▶</div>
           </a>
-          <p class="demo-caption">CLICK TO WATCH THE FULL DEMO</p>
+          <p class="rkv-demo-caption">CLICK TO WATCH THE FULL DEMO</p>
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ══════════════════════════════════════════
+     RIKANVERSE — merged from rikanverse.com
+     (rikanverse.com stays live separately; images load from there)
+     ══════════════════════════════════════════ -->
+<div id="rikanverse" class="rkv">
+<div class="rkv-topbar">
+  <img src="https://rikanverse.com/rikanverselogo.png" alt="Rikanverse" style="height:45px;width:auto;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdonMLnlxU1Es8mtMwwXApJq3GBpFiC1dkCgi28mt-nTEgJ9w/viewform" class="rkv-nav-cta" target="_blank">Apply for Early Access →</a>
+</div>
+<!-- HERO CONTENT -->
+<section style="text-align:center;padding:100px 40px 80px;background:var(--navy);display:flex;flex-direction:column;align-items:center;gap:16px;">
+  <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,7vw,5.5rem);font-weight:300;line-height:1.1;letter-spacing:2px;">RIKANVERSE LTD.</h1>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:300;color:var(--gold);">Building AI Marvels</h2>
+
+  <p style="max-width:700px;color:rgba(255,255,255,0.6);font-size:1rem;line-height:1.8;">Rikanverse® Ltd. is an AI Engineering Studio that builds revolutionary AI products.</p>
+
+  <img src="https://rikanverse.com/heroimage.png" alt="Rikanverse® UK PropTech App - One of the World's First proactive, Multilingual, Voice-Native, ReAct-Engine-powered Agentic AI UK Market Property App" style="max-width:900px;width:100%;border-radius:20px;margin:16px 0 8px;box-shadow:0 30px 80px rgba(0,0,0,0.4);">
+
+  <img src="https://rikanverse.com/flagship.png" style="max-width:900px;width:100%;border-radius:20px;border:1px solid var(--border);box-shadow:0 40px 100px rgba(0,0,0,0.5);">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdonMLnlxU1Es8mtMwwXApJq3GBpFiC1dkCgi28mt-nTEgJ9w/viewform" class="rkv-btn-primary" target="_blank">Apply for Early Access →</a>
+</section>
+
+<section class="rkv-problem">
+  <div class="rkv-problem-box">
+    <h3>The Problem with Property Search Today</h3>
+    <ul class="rkv-problem-list">
+      <li>Most property apps are still filter-based and manual but people have natural questions that existing platforms don't handle</li>
+      <li>Understanding council tax, bills, or rental processes is confusing and requires endless Googling</li>
+      <li>Finding properties based on lifestyle, not just bedrooms and price ranges</li>
+      <li>Asking questions naturally instead of endlessly clicking boxes</li>
+      <li>Asking questions in your native language, not just English</li>
+    </ul>
+  </div>
+</section>
+<section class="rkv-features">
+  <p class="rkv-section-label">What Makes Rikanverse Different</p>
+  <h2 class="rkv-section-title">Truly Agentic. Truly Different.</h2>
+  <p class="rkv-section-sub">Not a chatbot. Not a filter. A proactive AI agent that thinks like a human estate agent.</p>
+  <div class="rkv-features-grid">
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ ReAct Engine Powered</h3><p>Built on a ReAct (Reasoning + Acting) architecture; Rikanverse doesn't just answer, it reasons through your needs and takes real actions.</p></div>
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ Voice-First & Native</h3><p>Speak naturally. Landlords verbally register listings. Tenants describe their ideal home out loud. No typing required.</p></div>
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ Multilingual</h3><p>Ask questions in your native language. Rikanverse understands multiple languages.</p></div>
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ Proactive Intelligence</h3><p>Rikanverse anticipates your needs like a human agent would. It doesn't wait for perfect input; it guides you through the process.</p></div>
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ Two-Sided Marketplace</h3><p>Landlords list by speaking. Tenants get matched to real listings first, get matched to listings on Rikanverse also can then routed to existing Property Apps in the UK.</p></div>
+    <div class="rkv-feature-card"><div class="rkv-feature-icon"></div><h3>✓ Trusted Property Guidance</h3><p>Council tax explained. Tenancy agreements clarified. Mortgage guidance included. Rental market demand and supply insights, all in one conversation.</p></div>
+  </div>
+</section>
+<section class="rkv-for-who">
+  <p class="rkv-section-label">Built For</p>
+  <h2 class="rkv-section-title">Everyone in the UK Property Market</h2>
+  <div class="rkv-who-grid">
+    <div class="rkv-who-card">
+      <h3>Tenants & Buyers</h3>
+      <p>Ask questions, describe your lifestyle, search by voice. Rika matches you to listings and guides you through the whole process.</p>
+      <ul class="rkv-who-list">
+        <li>Ask "What is council tax?", get instant answers</li>
+        <li>Describe your ideal home naturally</li>
+        <li>Voice or text search</li>
+        <li>Matched to real Rikanverse listings first</li>
+        <li>Routed to existing Property Apps in the UK with perfect filters</li>
+        <li>Mortgage guidance included</li>
+      </ul>
+    </div>
+    <div class="rkv-who-card rkv-landlord">
+      <h3>Landlords & Agents</h3>
+      <p>Verbally register your listing. Ask market questions. </p>
+      <ul class="rkv-who-list">
+        <li>Register listing by speaking/ typing, no forms</li>
+        <li>Ask "What rent should I charge?", AI advises based on market</li>
+        <li>Understand council tax obligations</li>
+        <li>Free during closed beta</li>
+        <li>Instant tenant matching</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="rkv-demos">
+
+  <h2 class="rkv-section-title"> See it in Action</h2>
+  <div class="rkv-demos-grid">
+    <div class="rkv-demo-card">
+    <div class="rkv-demo-video"><iframe src="https://www.youtube.com/embed/qA67hR3qKrY" allowfullscreen></iframe></div>
+     <div class="rkv-demo-info"><h3>For Tenants</h3><p>Asking questions and getting matched to listings through natural conversation.</p></div>
+    </div>
+    <div class="rkv-demo-card">
+    <div class="rkv-demo-video"><iframe src="https://www.youtube.com/embed/UDqhNOY2xrM" allowfullscreen></iframe></div>
+     <div class="rkv-demo-info"><h3>For Landlords</h3><p>Asking property doubts and verbally registering a listing through conversation.</p></div>
+    </div>
+    <div class="rkv-demo-card">
+    <div class="rkv-demo-video"><iframe src="https://www.youtube.com/embed/xg1EKWAW2d8" allowfullscreen></iframe></div>
+     <div class="rkv-demo-info"><h3>Multilingual Support </h3><p>Mobile view. Rikanverse responding when the user converses in their native language.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ══ 09 FOUNDER ══ -->
-<section id="founder" class="founder-section">
-  <div class="container">
-    <p class="section-eyebrow">MEET THE FOUNDER</p>
-    <h2 class="section-title">RIMJHIM (RÉMY) SINGH</h2>
-    <div class="founder-grid">
-      <div class="founder-photo">
-        <img src="IMG_2.jpg" alt="Rimjhim Singh — AI Engineer &amp; Founder">
-      </div>
-      <div class="founder-bio">
-        <h3>Rimjhim (Rémy) Singh</h3>
-        <p class="founder-title">AI ARCHITECT/ ENGINEER· TECHNICAL AI PRODUCT ARCHITECT · ECONOMIST · FOUNDER</p>
-        <p>Rimjhim (Rémy) Singh is a London-based AI Archtect, AI Engineer, Economist, and the Founder and CEO of RIKANVERSE LTD., an AI Innovation Studio focused on building next-generation Agentic AI systems, intelligent automation products, and enterprise-grade AI solutions. She is also the sole architect and developer of this App.</p>
-        <p>She specialises in Agentic AI, LLM automation, AI agents, NLP, RAG pipelines, and scalable machine learning systems, designing intelligent solutions across the UK, Australia, Asia, and North America. Her work focuses on building AI systems capable of reasoning, planning, workflow orchestration, and real-world decision-making.</p>
-        <p>She holds an MSc in Beh. & Data Science from the University of Warwick and a Master's degree in Quantitative Economics. She is a Google Certified AI Professional. She has worked as a Senior AI Engineer for a London-based company where she architected and optimised enterprise GenAI workflows supporting startups across 60+ countries. She has also contributed to an Australian healthcare startup by designing AI-powered healthcare systems and conversational AI solutions.</p>
-        <p>Her work has delivered measurable impact including 95%+ workflow acceleration, 60%+ productivity improvements, and up to 98% faster document analysis for enterprise teams. Through RIMJHIM AI KINGDOM®, she has independently designed and developed multiple full-stack AI systems: conversational banking assistants, voice-first PropTech applications, intelligent automation agents, and AI orchestration frameworks, engineering more than 10 AI agents.</p>
-        <p>Before transitioning fully into AI Engineering, Rimjhim built a strong academic and research background in Economics, Data Analysis, and Quantitative Research. She previously worked as an Assistant Professor and has published 15+ research articles across labour economics, industrial organisation, environmental policy, tourism economics, and ML-driven analysis. She presented research at the University of Oxford, where her paper was later published by Brill. She is also the author of <em>Puzzles of Labour Economics</em> (2022).</p>
-        <p>Early in her career, she worked as an Intern with the Ministry of Home Affairs, Government of India. She is an alumna of Ramjas College, University of Delhi (Economics Honours), where she secured the <strong>Overall Rank 1</strong> position. She has also ranked among the top Kaggle participants globally in machine learning competitions and actively contributes to open-source AI communities including Hugging Face.</p>
-        <div class="founder-quote">
-          <p>"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."</p>
-        </div>
-        <div class="founder-links">
-          <a href="https://www.linkedin.com/in/rimjhim-ri" target="_blank" class="founder-link">LINKEDIN</a>
-          <a href="https://github.com/rimjhimsinghcoder1" target="_blank" class="founder-link">GITHUB</a>
-          <a href="https://www.linkedin.com/company/rimjhim-ai-kingdom" target="_blank" class="founder-link">RIMJHIM AI KINGDOM PAGE</a>
-        </div>
-      </div>
+
+
+
+
+
+<section style="padding:40px 60px;text-align:center;border-top:1px solid var(--border);">
+  <p style="color:rgba(255,255,255,0.8);font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;"> Rikanverse ProTech App Beta Deployment Timestamp</p>
+  <img src="https://rikanverse.com/railway.jpeg" style="max-width:600px;width:100%;border-radius:12px;border:1px solid rgba(126,184,247,0.15);opacity:0.8;">
+  <p style="color:rgba(255,255,255,0.8);font-size:0.75rem;margin-top:12px;"> Deployed on June 10, 2026</p>
+</section>
+
+<section id="founder" style="scroll-margin-top:60px;padding:80px 60px;max-width:1100px;margin:0 auto;">
+  <p class="rkv-section-label">Meet the Founder</p>
+  <h2 class="rkv-section-title" style="margin-bottom:40px;">Rimjhim (Rémy) Singh</h2>
+
+  <div class="rkv-founder-box" style="background:var(--glass);border:1px solid var(--border);border-radius:20px;padding:48px;">
+
+    <div class="rkv-founder-photo">
+      <img src="https://rikanverse.com/founder.jpg" alt="Rimjhim (Rémy) Singh">
+    </div>
+
+    <div class="rkv-founder-text">
+      <p style="color:var(--gold);font-size:0.85rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">
+        AI Engineer · Technical AI Product Architect · Economist · Founder
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:24px;">
+        Rimjhim (Rémy) Singh is a London-based AI Architect and AI Engineer, Economist, and the Founder and CEO of RIKANVERSE® LTD., an AI Innovation Studio focused on building next-generation Agentic AI systems, intelligent automation products, and enterprise-grade AI solutions. She is also the sole architect and developer of this App.
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:20px;">
+        She specialises in Agentic AI, LLM automation, AI agents, NLP, RAG pipelines, and scalable machine learning systems, designing intelligent solutions across the UK, Australia, Asia, and North America. Her work focuses on building AI systems capable of reasoning, planning, workflow orchestration, and real-world decision-making.
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:20px;">
+        She holds an MSc in Beh. & Data Science from the University of Warwick and a Master's degree in Quantitative Economics. She is a Google Certified AI Professional. She has worked as a Senior AI Engineer for a London-based company where she architected and optimised enterprise GenAI workflows supporting startups across 60+ countries. She has also contributed to an Australian healthcare startup by designing AI-powered healthcare systems and conversational AI solutions.
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:20px;">
+        Her work has delivered measurable impact including 95%+ workflow acceleration, 60%+ productivity improvements, and up to 98% faster document analysis for enterprise teams. Through RIKANVERSE® LTD., she has independently designed and developed multiple full-stack AI systems: conversational banking assistants, voice-first PropTech applications, intelligent automation agents, and AI orchestration frameworks, engineering more than 10 AI agents.
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:20px;">
+        Before transitioning fully into AI Engineering, Rimjhim built a strong academic and research background in Economics, Data Analysis, and Quantitative Research. She previously worked as an Assistant Professor and has published 15+ research articles across labour economics, industrial organisation, environmental policy, tourism economics, and ML-driven analysis. She presented research at the University of Oxford, where her paper was later published by Brill. She is also the author of Puzzles of Labour Economics (2022).
+      </p>
+
+      <p style="color:rgba(255,255,255,0.7);line-height:1.9;font-size:0.95rem;margin-top:20px;">
+        Early in her career, she worked as an Intern with the Ministry of Home Affairs, Government of India. She is an alumna of Ramjas College, University of Delhi (Economics Honours), where she secured the Overall Rank 1 position. She has also ranked among the top Kaggle participants globally in machine learning competitions and actively contributes to open-source AI communities including Hugging Face.
+      </p>
     </div>
   </div>
+
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:1.2rem;line-height:1.7;text-align:center;margin-top:36px;">
+    "AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."
+  </p>
 </section>
+
+<section style="padding:40px 60px;text-align:center;border-top:1px solid var(--border);">
+  <p style="color:rgba(255,255,255,0.4);font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Contact & Connect</p>
+  <a href="https://www.linkedin.com/company/rikanverse/?viewAsMember=true" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#0a66c2,#004182);color:white;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.95rem;margin:8px;">
+    Rikanverse Ltd on LinkedIn →
+  </a>
+  <a href="https://www.linkedin.com/in/rimjhim-ri/" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#0a66c2,#004182);color:white;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.95rem;margin:8px;">
+    Rimjhim (Rémy) Singh — Founder →
+  </a>
+</section>
+</div>
+<!-- ══ END RIKANVERSE ══ -->
 
 <!-- ══ FOOTER ══ -->
 <footer>
@@ -765,45 +973,46 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
     <a href="https://github.com/rimjhimsinghcoder1" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/company/rimjhim-ai-kingdom" target="_blank">RIMJHIM AI KINGDOM </a>
     <a href="https://medium.com/@rimjhimsingh.professional" target="_blank">Medium Articles</a>
+    <a href="https://rikanverse.com" target="_blank">Rikanverse.com</a>
   </div>
-  <p style="font-family:'Share Tech Mono',monospace;font-size:9px;color:#1e2d45;margin-top:16px;letter-spacing:2px;">RIMJHIM AI KINGDOM © 2025 · BUILT WITH PRECISION · POWERED BY CURIOSITY</p>
+  <p style="font-family:'Share Tech Mono',monospace;font-size:9px;color:#1e2d45;margin-top:16px;letter-spacing:2px;">RIMJHIM AI KINGDOM © 2025 · BUILT WITH PRECISION · POWERED BY CURIOSITY · © 2026 RIKANVERSE LTD., LONDON</p>
 </footer>
 
 <script>
 /* ── CITY DATA ── */
 const cityData = {
   bank: {
-    tag:'🏦 FINTECH · AGENTIC AI · FCA/GDPR', title:'BANKING TOWER', color:'#a78bfa',
+    tag:'FINTECH · AGENTIC AI · FCA/GDPR', title:'BANKING TOWER', color:'#a78bfa',
     problems:['Our chatbot only follows scripted flows — it can\'t reason or adapt','Compliance checks are manual and slow — real risk of human error','Customer escalation is unpredictable — we lose trust at critical moments'],
     solution:'Rimjhim built an Intelligent Banking Agent on a ReAct Orchestration Engine with a Six-Gate Safety System — verifying every action against FCA/GDPR rules automatically. Confidence-based routing to human agents when certainty drops below threshold. Zero unsafe actions.',
     stack:['ReAct Engine','LangChain','RAG','6-Gate Safety','FCA/GDPR','Python']
   },
   prop: {
-    tag:'🏙️ PROPTECH · VOICE-FIRST · AGENTIC', title:'PROPERTY TOWERS', color:'#67e8f9',
+    tag:'PROPTECH · VOICE-FIRST · AGENTIC', title:'PROPERTY TOWERS', color:'#67e8f9',
     problems:['Our search is keyword-based — users can\'t search naturally or conversationally','We can\'t handle complex multi-constraint queries like "near Tube, under £400k, 2-bed"','No voice interface — competitors are already moving ahead'],
     solution:'Rimjhim built the UK\'s first Voice-First Agentic Property Agent — understanding natural speech, reasoning across 3+ simultaneous constraints, asking clarifying questions like a human estate agent. Separate voice and text reasoning pipelines via FastAPI.',
     stack:['Web Speech API','FastAPI','Dual-Pipeline','Intent-Gating','PostgreSQL','Python']
   },
   school: {
-    tag:'🏫 PRODUCTIVITY · RAG + AGENT', title:'KNOWLEDGE ACADEMY', color:'#fcd34d',
+    tag:'PRODUCTIVITY · RAG + AGENT', title:'KNOWLEDGE ACADEMY', color:'#fcd34d',
     problems:['Staff waste hours searching through documents manually every day','AI answers hallucinate — we can\'t trust the outputs for important decisions','API costs are too high for document processing at enterprise scale'],
     solution:'Rimjhim built an AI Document Assistant with dual-engine RAG + ReAct — zero hallucinations, full source attribution, local embeddings reducing cost by 10× vs standard implementations. Automatic fallback from agent to RAG on failure.',
     stack:['ChromaDB','SentenceTransformers','ReAct Agent','Streamlit','Local Embeddings','Python']
   },
   rest: {
-    tag:'🍽️ HOSPITALITY · NLP · HUMAN-IN-LOOP', title:'RESTAURANT QUARTER', color:'#fca5a5',
+    tag:'HOSPITALITY · NLP · HUMAN-IN-LOOP', title:'RESTAURANT QUARTER', color:'#fca5a5',
     problems:['Responding to 500+ reviews manually takes the team hours every week','We miss crisis reviews — one bad viral post can damage the entire brand','AI responses don\'t sound like our brand voice — they feel generic'],
     solution:'Rimjhim built an AI Review Response Agent with sentiment analysis, crisis detection, and brand-voice generation — 92% sentiment accuracy across 500+ reviews tested. All responses routed through a human-in-loop approval dashboard.',
     stack:['GPT-4','FastAPI','React','Crisis Detection','NLP Pipeline','Python']
   },
   office: {
-    tag:'🏢 AUTOMATION · AGENTIC WORKFLOW', title:'CORPORATE OFFICE', color:'#6ee7b7',
+    tag:'AUTOMATION · AGENTIC WORKFLOW', title:'CORPORATE OFFICE', color:'#6ee7b7',
     problems:['Our team spends 3+ hours daily on email triage alone — it\'s unsustainable','VIP emails get buried — we miss critical follow-ups that cost us relationships','Drafting context-aware replies takes too long at volume'],
     solution:'Rimjhim built an Intelligent Email Agent with CRM integration, thread history extraction, and sentiment-matched draft replies — 87% reduction in daily email handling time. Human-in-loop approval for VIP contacts.',
     stack:['Gmail API','n8n','GPT-4','Few-shot Learning','CRM Integration','Python']
   },
   news: {
-    tag:'📺 MEDIA · LLM PIPELINE · AUTOMATION', title:'NEWS CHANNEL HQ', color:'#93c5fd',
+    tag:'MEDIA · LLM PIPELINE · AUTOMATION', title:'NEWS CHANNEL HQ', color:'#93c5fd',
     problems:['We can\'t monitor 20+ competitor and industry sources manually every day','Intelligence is always 24hrs late — decisions are made on stale information','Summarising and distributing articles takes a full-time person'],
     solution:'Rimjhim built an AI News Intelligence System — autonomous pipeline running every 4 hours, aggregating 20+ sources, compressing via GPT-4, syncing to a searchable Notion knowledge base. 4× article coverage with near-zero manual overhead.',
     stack:['n8n','News API','GPT-4','Notion API','Automation Pipeline','Python']
