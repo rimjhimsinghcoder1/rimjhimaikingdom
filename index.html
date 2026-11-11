@@ -286,6 +286,55 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
 @media(max-width:400px){.rkv-demos-grid,.rkv-demo-grid,.rkv-features-grid{grid-template-columns:1fr;}.rkv-demo-card{min-width:0;}}
 
 /* MOBILE NAV HIDE */
+
+/* ══ PUBLICATIONS ══ */
+.pub-section{font-family:'Rajdhani',sans-serif;color:var(--text);background:var(--void);padding:90px 0 80px;border-top:1px solid rgba(124,58,237,.12);scroll-margin-top:50px;}
+.pub-section .container{max-width:1000px;}
+.pub-eyebrow{font-family:'Share Tech Mono',monospace;font-size:13px;letter-spacing:4px;color:var(--accent2);text-align:center;margin-bottom:14px;}
+.pub-heading{font-family:'Orbitron',monospace;font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:4px;text-align:center;background:linear-gradient(135deg,var(--glow),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:30px;}
+.pub-group{display:flex;align-items:center;gap:16px;margin:46px 0 18px;}
+.pub-group span{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;letter-spacing:2px;color:var(--accent3);white-space:nowrap;text-transform:uppercase;}
+.pub-group::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(245,158,11,.4),rgba(124,58,237,.15) 60%,transparent);}
+.pub-card{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:26px 30px;margin-bottom:14px;background:linear-gradient(160deg,rgba(15,30,53,.75),rgba(6,13,26,.85));border:1px solid rgba(124,58,237,.25);border-radius:6px;transition:border-color .25s,transform .25s;}
+.pub-card:hover{border-color:rgba(6,182,212,.5);transform:translateY(-2px);}
+.pub-side{display:flex;flex-direction:column;gap:8px;border-right:1px solid rgba(124,58,237,.2);padding-right:20px;}
+.pub-year{font-family:'Orbitron',monospace;font-size:22px;font-weight:700;color:#fff;letter-spacing:1px;}
+.pub-year-sm{font-size:17px;}
+.pub-type{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--glow);text-transform:uppercase;line-height:1.5;}
+.pub-title{font-family:'Rajdhani',sans-serif;font-size:21px;font-weight:700;line-height:1.35;color:#fff;margin:0 0 8px;letter-spacing:.2px;}
+.pub-authors{font-size:16px;color:var(--muted);margin:0 0 4px;}
+.pub-me{color:#e2e8f0;font-weight:600;border-bottom:1px solid var(--accent2);}
+.pub-venue{font-size:16px;font-weight:500;color:var(--accent2);margin:0 0 6px;}
+.pub-venue em{font-style:italic;}
+.pub-badge{display:inline-block;margin:4px 0 8px;padding:3px 12px;border-radius:20px;font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--accent3);background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.35);}
+.pub-doi{font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--muted);margin:2px 0 0;word-break:break-all;}
+.pub-doi a{color:#a5f3fc;text-decoration:none;border-bottom:1px dashed rgba(6,182,212,.5);}
+.pub-doi a:hover{color:#fff;border-bottom-style:solid;}
+.pub-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;}
+.pub-pill{font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:1.5px;padding:7px 16px;border-radius:20px;color:#e2e8f0;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.35);text-decoration:none;transition:background .2s,color .2s;}
+.pub-pill:hover{background:var(--accent2);color:#02040a;}
+.pub-more{margin-top:12px;}
+.pub-more summary{cursor:pointer;font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:1.5px;color:var(--glow);list-style:none;text-transform:uppercase;}
+.pub-more summary::-webkit-details-marker{display:none;}
+.pub-more summary::before{content:'+ ';color:var(--accent2);}
+.pub-more[open] summary::before{content:'− ';}
+.pub-chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;}
+.pub-chips span{font-size:13px;font-weight:600;padding:3px 10px;border-radius:20px;color:#c4b5fd;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.3);}
+.pub-more p{font-size:16px;line-height:1.7;color:#cbd5e1;margin:0;text-align:justify;}
+.pub-more p strong{color:#fff;}
+.pub-medium{display:flex;flex-direction:column;gap:10px;}
+.pub-medium a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 22px;border:1px solid rgba(124,58,237,.25);border-left:3px solid var(--accent2);border-radius:4px;background:rgba(15,30,53,.5);text-decoration:none;color:#e2e8f0;font-size:17px;font-weight:600;transition:background .2s,border-color .2s;}
+.pub-medium a:hover{background:rgba(6,182,212,.08);border-color:rgba(6,182,212,.5);}
+.pub-medium em{font-style:normal;font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--accent2);white-space:nowrap;}
+@media(max-width:640px){
+  .pub-card{grid-template-columns:1fr;gap:12px;padding:20px 18px;}
+  .pub-side{flex-direction:row;align-items:baseline;gap:12px;border-right:none;border-bottom:1px solid rgba(124,58,237,.2);padding:0 0 10px;}
+  .pub-year{font-size:18px;}
+  .pub-group span{white-space:normal;font-size:13px;}
+  .pub-title{font-size:19px;}
+  .pub-more p{text-align:left;}
+  .pub-medium a{flex-direction:column;align-items:flex-start;gap:6px;}
+}
 @media(max-width:768px){.nav-links{display:none;}.nav-status{display:none;}}
 </style>
 </head>
@@ -303,6 +352,7 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
     <li><a href="#articles">KNOWLEDGE</a></li>
     <li><a href="#demo">DEMO</a></li>
     <li><a href="#rikanverse">RIKANVERSE</a></li>
+    <li><a href="#publications">PUBLICATIONS</a></li>
     <li><a href="#founder">FOUNDER</a></li>
   </ul>
   <div class="nav-status"><span class="dot"></span>SYSTEMS ONLINE</div>
@@ -910,6 +960,172 @@ footer{background:var(--deep);border-top:1px solid rgba(124,58,237,.15);padding:
   <p style="color:rgba(255,255,255,0.8);font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;"> Rikanverse ProTech App Beta Deployment Timestamp</p>
   <img src="https://rikanverse.com/railway.jpeg" style="max-width:600px;width:100%;border-radius:12px;border:1px solid rgba(126,184,247,0.15);opacity:0.8;">
   <p style="color:rgba(255,255,255,0.8);font-size:0.75rem;margin-top:12px;"> Deployed on June 10, 2026</p>
+</section>
+
+<!-- ══ 07b PUBLICATIONS ══ -->
+<section id="publications" class="pub-section">
+  <div class="container">
+    <p class="pub-eyebrow">RESEARCH · BOOKS · JOURNAL ARTICLES</p>
+    <h2 class="pub-heading">PUBLICATIONS</h2>
+    <div class="pub-group"><span>Forthcoming</span></div>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year pub-year-sm">In Press</span><span class="pub-type">Journal Article</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">When the gold standard meets the classroom: Risk of bias and the limits of RCTs in education</h3>
+        <p class="pub-authors">Fullard, J., <span class="pub-me">Singh, R.</span>, &amp; Ventura-Coello, S.</p>
+        <p class="pub-venue">Nature Human Behaviour</p>
+      </div>
+    </article>
+    <div class="pub-group"><span>Authored Book</span></div>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2022</span><span class="pub-type">Book</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Puzzles of Labour Economics</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Eliva Press · ISBN 978-9994984879</p>
+        <div class="pub-actions"><a class="pub-pill" href="https://www.amazon.co.uk/Puzzles-Labour-Economics-Rimjhim-Singh/dp/999498487X" target="_blank" rel="noopener">AMAZON ↗</a></div>
+      </div>
+    </article>
+    <div class="pub-group"><span>Book Chapter</span></div>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2016</span><span class="pub-type">Book Chapter</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Sport and Anti-Sport: Big Game Hunting in Jim Corbett’s India</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span>, &amp; Singh, R.</p>
+        <p class="pub-venue">In <em>Sport, Identity and Community</em>. Brill, Leiden, The Netherlands</p>
+        <span class="pub-badge">Presented at the University of Oxford</span>
+        <p class="pub-doi">DOI: <a href="https://doi.org/10.1163/9781848884526_005" target="_blank" rel="noopener">10.1163/9781848884526_005</a></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://doi.org/10.1163/9781848884526_005" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <div class="pub-group"><span>Peer-Reviewed Journal Articles</span></div>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2026</span><span class="pub-type">Agentic AI</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Architecting &amp; Engineering Production-Grade Agentic AI for Industry-Specific Needs</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">International Journal for Multidisciplinary Research</p>
+        <details class="pub-more"><summary>Methods &amp; Research Contribution</summary>
+          <div class="pub-chips"><span>LLMs</span><span>Agentic AI</span><span>Multi-Agent ReAct Orchestration</span><span>RAG</span><span>NLP</span><span>Sentiment Analysis</span><span>Few-Shot Learning</span><span>Comparative System Architecture Analysis</span><span>Tool Orchestration</span><span>Compliance-Aware AI Design</span><span>Human-in-the-Loop (HITL)</span></div>
+          <p><strong>Research Contribution:</strong> Architected, engineered, and deployed four industry-specific Agentic AI systems for banking, residential property, hospitality, and e-commerce customer service, integrated within Rimjhim AI Kingdom®. Conducted a comparative architectural analysis identifying six key customisation dimensions: interaction mode, knowledge source, reasoning style, compliance layer, integrations, and automation boundaries. Demonstrated how shared agentic architectures can be adapted to industry-specific requirements through multi-agent reasoning, regulatory compliance, multilingual interaction, and human oversight, establishing practical design principles for production-grade Agentic AI systems.</p>
+        </details>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2026</span><span class="pub-type">Agentic AI</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Engineering Reliable Agentic AI: Decision-Making in Real-World Deployments</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">International Journal for Multidisciplinary Research, 8(6)</p>
+        <p class="pub-doi">DOI: <a href="https://www.ijfmr.com/research-paper.php?id=91388" target="_blank" rel="noopener">10.36948/ijfmr.2026.v08i06.91388</a></p>
+        <details class="pub-more"><summary>Methods &amp; Research Contribution</summary>
+          <div class="pub-chips"><span>LLMs</span><span>Agentic AI</span><span>ReAct Orchestration Engine</span><span>Autonomous Tool Calling</span><span>Conversational Memory</span><span>Uncertainty-Aware Decision-Making</span><span>AI Safety Evaluation</span></div>
+          <p><strong>Research Contribution:</strong> Engineered and deployed Rikanverse®, a multilingual, voice-native Agentic AI App for the UK property market. Developed proactive clarification, state management, and validation mechanisms to improve reliability. Proposed an evaluation framework covering accuracy-abstention trade-offs, adversarial robustness, multilingual consistency, and latency, informed by preliminary research involving 30 respondents.</p>
+        </details>
+        <div class="pub-actions"><a class="pub-pill" href="https://www.ijfmr.com/papers/2026/6/91388.pdf" target="_blank" rel="noopener">PAPER (PDF) ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2024</span><span class="pub-type">Machine Learning</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Decoding the Obesity Puzzle in Peru, Colombia, and Mexico</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">International Journal of Humanities Social Science and Management, 4(6), 409–417</p>
+        <p class="pub-doi">DOI: <a href="https://doi.org/10.5281/zenodo.23871159" target="_blank" rel="noopener">10.5281/zenodo.23871159</a></p>
+        <details class="pub-more"><summary>Methods &amp; Key Findings</summary>
+          <div class="pub-chips"><span>Supervised Machine Learning</span><span>Python</span><span>K-Nearest Neighbors (KNN)</span><span>Naïve Bayes</span><span>Feature Engineering</span><span>Binary Classification</span><span>ROC Analysis</span><span>Precision-Recall Curves</span><span>Confusion Matrices</span></div>
+          <p><strong>Key Findings:</strong> Achieved predictive accuracies of 94.33% (KNN) and 90.31% (Naïve Bayes) in classifying overweight and obesity using the UCI Machine Learning Repository dataset.</p>
+        </details>
+        <div class="pub-actions"><a class="pub-pill" href="https://doi.org/10.5281/zenodo.23871159" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2024</span><span class="pub-type">Machine Learning</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">The Puzzle of Economic Development</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">International Journal of Humanities Social Science and Management, 4(6), 252–259</p>
+        <p class="pub-doi">DOI: <a href="https://doi.org/10.5281/zenodo.23866917" target="_blank" rel="noopener">10.5281/zenodo.23866917</a></p>
+        <details class="pub-more"><summary>Methods &amp; Key Findings</summary>
+          <div class="pub-chips"><span>Python</span><span>Principal Component Analysis (PCA)</span><span>OLS Regression</span><span>Dimensionality Reduction</span><span>Multivariate Statistical Analysis</span><span>Correlation Analysis</span><span>Geospatial Visualisation</span></div>
+          <p><strong>Key Findings:</strong> The first two principal components explained 89% of total variance, while multiple linear regression achieved an R² of 0.569, revealing cross-country development patterns using UNDP Human Development Index data.</p>
+        </details>
+        <div class="pub-actions"><a class="pub-pill" href="https://doi.org/10.5281/zenodo.23866917" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2022</span><span class="pub-type">Game Theory</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Multimarket Contacts with Trade Costs and Distance Cost</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Journal of Business Management and Information Systems, 9(1), 1–4</p>
+        <p class="pub-doi">DOI: <a href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1496/848" target="_blank" rel="noopener">10.48001/jbmis.2022.0901001</a></p>
+        <details class="pub-more"><summary>Methods &amp; Research Contribution</summary>
+          <div class="pub-chips"><span>Non-Cooperative &amp; Repeated Game Theory</span><span>Bertrand and Cournot Competition</span><span>Nash Equilibrium</span><span>Nash Reversion Strategies</span><span>Incentive Compatibility Constraints</span><span>Mathematical Optimisation</span><span>Comparative Statics</span></div>
+          <p><strong>Research Contribution:</strong> Investigated multimarket collusion and trade liberalisation, developing the Distance Paradox to explain how reductions in transportation costs can facilitate collusion under specific market conditions.</p>
+        </details>
+        <div class="pub-actions"><a class="pub-pill" href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1496/848" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2022</span><span class="pub-type">Economics</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Capital Account Liberalization Debates</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Veethika – An International Interdisciplinary Research Journal, 8(4), 16–19</p>
+        <p class="pub-doi">DOI: <a href="https://qtanalytics.in/journals/index.php/VEETHIKA/article/view/1573/952" target="_blank" rel="noopener">10.48001/veethika.2022.08.04.003</a></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://qtanalytics.in/journals/index.php/VEETHIKA/article/view/1573/952" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2022</span><span class="pub-type">Economics</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">An Analysis of the Status and Potential of the Delhi Tourism Industry</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Journal of Business Management and Information Systems, 9(2), 1–10</p>
+        <p class="pub-doi">DOI: <a href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1541/935" target="_blank" rel="noopener">10.48001/jbmis.2022.0902001</a></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1541/935" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2022</span><span class="pub-type">Economics</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Curbing Child Labour is the Da Vinci Code of Economic Development</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Veethika – An International Interdisciplinary Research Journal, 8(2), 25–28</p>
+        <p class="pub-doi">DOI: <a href="https://qtanalytics.in/journals/index.php/VEETHIKA/article/view/1495/847" target="_blank" rel="noopener">10.48001/veethika.2022.08.02.006</a></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://qtanalytics.in/journals/index.php/VEETHIKA/article/view/1495/847" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year">2021</span><span class="pub-type">Econometrics</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Analyzing the Impact of the Economic Crisis in Greece on the U.S.</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue">Journal of Business Management and Information Systems, 8(2), 18–26</p>
+        <p class="pub-doi">DOI: <a href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1508/865" target="_blank" rel="noopener">10.48001/jbmis.2021.0802003</a></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://qtanalytics.in/journals/index.php/JBMIS/article/view/1508/865" target="_blank" rel="noopener">PAPER ↗</a></div>
+      </div>
+    </article>
+    <div class="pub-group"><span>Other Publications</span></div>
+    <article class="pub-card">
+      <div class="pub-side"><span class="pub-year"></span><span class="pub-type">Press</span></div>
+      <div class="pub-main">
+        <h3 class="pub-title">Letter to the Editor</h3>
+        <p class="pub-authors"><span class="pub-me">Singh, R.</span></p>
+        <p class="pub-venue"><em>The Hindu</em></p>
+        <div class="pub-actions"><a class="pub-pill" href="https://www.thehindu.com/opinion/letters/article16530807.ece" target="_blank" rel="noopener">VIEW PUBLICATION ↗</a></div>
+      </div>
+    </article>
+    <div class="pub-group"><span>Tech Articles on Medium</span></div>
+    <div class="pub-medium">
+      <a href="https://medium.com/@rimjhimsingh.professional/designing-reliable-ai-systems-my-engineering-approach-across-rag-agents-and-real-world-workflows-61a3645b2d8a" target="_blank" rel="noopener"><span>Designing Reliable AI Systems: My Engineering Approach Across RAG, Agents, and Real-World Workflows</span><em>READ ↗</em></a>
+      <a href="https://medium.com/@rimjhimsingh.professional/why-your-ai-project-failed-and-how-to-fix-it-e3110483e1c0" target="_blank" rel="noopener"><span>Why Your AI Project Failed and How to Fix It</span><em>READ ↗</em></a>
+      <a href="https://medium.com/@rimjhimsingh.professional/how-to-validate-ai-generated-python-code-15f662c6fed4" target="_blank" rel="noopener"><span>How to Validate AI-Generated Python Code</span><em>READ ↗</em></a>
+      <a href="https://medium.com/@rimjhimsingh.professional" target="_blank" rel="noopener"><span>I Built One of the World's First Navigable &amp; Interactive Agentic AI Virtual City Experience Web App!</span><em>READ ↗</em></a>
+      <a href="https://medium.com/@rimjhimsingh.professional" target="_blank" rel="noopener"><span>Tired of Writing Docstrings? GitHub Copilot Has You Covered!</span><em>READ ↗</em></a>
+    </div>
+  </div>
 </section>
 
 <section id="founder" style="scroll-margin-top:60px;padding:80px 60px;max-width:1100px;margin:0 auto;">
