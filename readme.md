@@ -7,7 +7,6 @@ Founded by **Rimjhim (Rémy) Singh** · Rikanverse® Ltd., London
 
 ![Status](https://img.shields.io/badge/status-systems%20online-brightgreen)
 ![Language](https://img.shields.io/badge/built%20with-Python-blue)
-![No-code](https://img.shields.io/badge/no--code%20%2F%20low--code-none-red)
 ![Focus](https://img.shields.io/badge/focus-Agentic%20AI-purple)
 
 ---
