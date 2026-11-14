@@ -29,7 +29,6 @@ All systems are developed in **Python**, without any no-code or low-code platfor
 | **Property Towers** | Property Towers | Rikanverse® voice-first, multilingual PropTech agent |
 | **Hospitality Quarter** | Restaurant Quarter | Hotel and restaurant review automation |
 | **Enterprise Zone** | Corporate Office | CRM email assistant for e-commerce customer service |
-| **Enterprise Zone** | News HQ | News agent (GPT-4 + Notion) |
 | **Knowledge District** | Knowledge Academy and libraries | Published technical writing on reliable AI design |
 | **City centre** | Safety HQ | The shared six-gate safety core reused across systems |
 
@@ -37,23 +36,24 @@ All systems are developed in **Python**, without any no-code or low-code platfor
 
 | Agent | Stack highlights |
 |---|---|
-| Banking Agent | ReAct · RAG · FCA compliance |
-| Property Agent | Voice · FastAPI |
-| Doc Assistant | RAG · ChromaDB |
-| Review Agent | NLP · GPT-4 |
-| Email Agent | n8n · Gmail API |
-| News Agent | GPT-4 · Notion |
+| Banking Agent | Python · ReAct · RAG · FCA compliance |
+| Property Agent | Python · Voice · FastAPI |
+| Doc Assistant | Python · RAG · ChromaDB |
+| Review Agent | Python · NLP · GPT-4 |
+| CRM Email Assistant | Python · Few-shot LLM · CRM integration |
 
 ---
 
 ## Flagship Systems
 
 ### Banking Agent (Fintech)
+- **Built with:** Python
 - **Need:** Reasoning beyond scripted flows, plus compliance with UK FCA rules and GDPR.
 - **Architecture:** Multi-agent **ReAct orchestration engine**. Product and policy questions are answered from retrieved policy documents (RAG). Routine requests such as balance checks and statements are automated.
 - **Safety:** Every action passes a **six-gate compliance layer**. For risky actions such as transfers, the agent asks the customer to confirm or clarify depending on its confidence, a human is involved before the action is carried out, and actions can be rolled back.
 
 ### Rikanverse® UK PropTech App
+- **Built with:** Python
 - **Need:** UK property search is mostly filter-based, while people ask natural, spoken questions in many languages about Council Tax, tenancy agreements and mortgages.
 - **Architecture:** Voice-first, multilingual agent on a **ReAct reasoning loop**. Voice and text run through separate pipelines with their own latency budgets. Session state persists across the conversation.
 - **Two-sided marketplace:**
@@ -62,6 +62,8 @@ All systems are developed in **Python**, without any no-code or low-code platfor
 - **Beta deployed:** 10 June 2026 (free during closed beta).
 
 ### Hotel Review Agent (Hospitality)
+**Built with:** Python
+
 A four-layer production pipeline with a strict human-in-the-loop workflow:
 1. **NLP layer:** sentiment analysis (92% sentiment accuracy)
 2. **Crisis detection:** flags reviews with compliance or reputational risk
@@ -71,6 +73,7 @@ A four-layer production pipeline with a strict human-in-the-loop workflow:
 End-to-end processing takes 2–3 seconds.
 
 ### CRM Email Assistant (E-commerce)
+- **Built with:** Python
 - Classifies incoming email by urgency and topic
 - Pulls thread history and the customer's CRM record
 - Drafts sentiment-matched replies with few-shot learning
@@ -147,14 +150,8 @@ From the research paper *Architecting & Engineering Production-Grade Agentic AI 
 > *"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."*
 
 ---
----
 
 <p align="center">
   <b>RIMJHIM AI KINGDOM</b> © 2025 · Built with precision · Powered by curiosity<br>
   © 2026 Rikanverse® Ltd., London
 </p>
-
-
-
-
-
