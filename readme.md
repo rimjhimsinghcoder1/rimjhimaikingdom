@@ -1,266 +1,159 @@
-# RIMJHIM AI KINGDOM - an AI Knowledge Hub
-Website- https://rimjhimaikingdom.com/
+# Rimjhim AI Kingdom®
 
+> *"Where Knowledge Flows Like Raindrops"*
 
-**"Where Knowledge Flows Like Raindrops" ☔**
+**One of the world's first navigable agentic AI ecosystems, built solo.**
+Founded by **Rimjhim (Rémy) Singh** · Rikanverse® Ltd., London
+
+![Status](https://img.shields.io/badge/status-systems%20online-brightgreen)
+![Language](https://img.shields.io/badge/built%20with-Python-blue)
+![No-code](https://img.shields.io/badge/no--code%20%2F%20low--code-none-red)
+![Focus](https://img.shields.io/badge/focus-Agentic%20AI-purple)
 
 ---
 
 ## About
 
-RIMJHIM AI KINGDOM is my AI knowledge hub, built entirely from scratch using HTML5, CSS3, and JavaScript. This is not a template or theme - every line of code was written personally to create a professional platform showcasing my AI/ML engineering work, technical projects, published articles, and professional experience. The site features a responsive design that works seamlessly across desktop, tablet, and mobile devices, with custom layouts using CSS Grid and Flexbox, smooth scroll navigation, and integrated content from GitHub, Medium, and external resources. It serves dual purposes: demonstrating my full-stack web development capabilities and providing a knowledge-sharing platform for the AI/ML community through published articles, prompt engineering guides, and open-source project links.
+Rimjhim AI Kingdom is an AI innovation lab where agentic AI systems are designed, built and deployed from scratch. Every system starts with an architecture (reasoning engine, safety layer, multi-tool orchestration), not just a prompt and an API call.
 
-The website is deployed on GitHub Pages with full public code repository, showcasing clean semantic HTML, modular CSS architecture, mobile-first responsive design, and production-quality deployment practices. All source code is transparent and available for learning, demonstrating my commitment to open-source principles and community contribution. The site includes sections for professional bio, impact metrics, technical skills, academic background, certifications, AI projects, technical articles, and downloadable resources - providing a comprehensive view of my work as an AI/ML Engineer with 5+ years of experience specializing in LLM optimization, RAG systems, AI agents, and enterprise ML solutions.
+The ecosystem is presented as a **navigable virtual city**. Each building is a real agentic system. Click a building to see the industry problem it addresses and the solution built for it.
 
----
-
-## Live Website
-
-**Visit:** [rimjhimaikingdom.com](https://rimjhimaikingdom.com)
-
-**GitHub Pages (temporary):** `https://rimjhimsinghcoder1.github.io/rimjhimaikingdom/`
+All systems are developed in **Python**, without any no-code or low-code platforms.
 
 ---
 
-## Features
+## The AI City
 
-- **Responsive Design** - Optimized for desktop, tablet, and mobile
-- **Professional Layout** - Clean, modern, and accessible
-- **Performance Optimized** - Fast loading, minimal dependencies
-- **SEO Friendly** - Proper meta tags and semantic HTML
-- **GitHub Pages Ready** - Easy deployment and hosting
+| District | Building | What it represents |
+|---|---|---|
+| **Financial District** | Banking Tower | Intelligent banking agent with a six-gate safety system |
+| **Property Towers** | Property Towers | Rikanverse® voice-first, multilingual PropTech agent |
+| **Hospitality Quarter** | Restaurant Quarter | Hotel and restaurant review automation |
+| **Enterprise Zone** | Corporate Office | CRM email assistant for e-commerce customer service |
+| **Enterprise Zone** | News HQ | News agent (GPT-4 + Notion) |
+| **Knowledge District** | Knowledge Academy and libraries | Published technical writing on reliable AI design |
+| **City centre** | Safety HQ | The shared six-gate safety core reused across systems |
 
----
+### Agent line-up
 
-## Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with Flexbox & Grid
-- **JavaScript** - (Minimal, for future enhancements)
-- **Google Fonts** - Inter & Poppins
-- **GitHub Pages** - Free hosting
-
----
-
-## Project Structure
-```
-rimjhimaikingdom/
-│
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet
-├── README.md           # This file
-│
-└── images/             # Image assets
-    ├── banner.png      # Header banner (logo with tagline)
-    ├── profile.jpg     # Professional photo
-    └── avatar.jpg      # (Optional) Anime avatar
-```
+| Agent | Stack highlights |
+|---|---|
+| Banking Agent | ReAct · RAG · FCA compliance |
+| Property Agent | Voice · FastAPI |
+| Doc Assistant | RAG · ChromaDB |
+| Review Agent | NLP · GPT-4 |
+| Email Agent | n8n · Gmail API |
+| News Agent | GPT-4 · Notion |
 
 ---
 
-## Quick Start
+## Flagship Systems
 
-### Local Development
+### Banking Agent (Fintech)
+- **Need:** Reasoning beyond scripted flows, plus compliance with UK FCA rules and GDPR.
+- **Architecture:** Multi-agent **ReAct orchestration engine**. Product and policy questions are answered from retrieved policy documents (RAG). Routine requests such as balance checks and statements are automated.
+- **Safety:** Every action passes a **six-gate compliance layer**. For risky actions such as transfers, the agent asks the customer to confirm or clarify depending on its confidence, a human is involved before the action is carried out, and actions can be rolled back.
 
-1. **Clone the repository:**
-```bash
-   git clone https://github.com/rimjhimsinghcoder1/rimjhimaikingdom.git
-   cd rimjhimaikingdom
-```
+### Rikanverse® UK PropTech App
+- **Need:** UK property search is mostly filter-based, while people ask natural, spoken questions in many languages about Council Tax, tenancy agreements and mortgages.
+- **Architecture:** Voice-first, multilingual agent on a **ReAct reasoning loop**. Voice and text run through separate pipelines with their own latency budgets. Session state persists across the conversation.
+- **Two-sided marketplace:**
+  - **Tenants and buyers** describe their ideal home by voice or text and get matched to Rikanverse listings first, then routed to existing UK property apps with the right filters.
+  - **Landlords and agents** register listings by speaking, with no forms, and can ask market questions such as "What rent should I charge?"
+- **Beta deployed:** 10 June 2026 (free during closed beta).
 
-2. **Open in browser:**
-   - Simply open `index.html` in your web browser
-   - Or use a local server (recommended):
-```bash
-     # Python 3
-     python -m http.server 8000
-     
-     # Then visit: http://localhost:8000
-```
+### Hotel Review Agent (Hospitality)
+A four-layer production pipeline with a strict human-in-the-loop workflow:
+1. **NLP layer:** sentiment analysis (92% sentiment accuracy)
+2. **Crisis detection:** flags reviews with compliance or reputational risk
+3. **Generation layer:** drafts replies in the brand's own voice
+4. **Approval dashboard** (FastAPI + React): staff approve every reply before it is published
 
-3. **Make changes:**
-   - Edit `index.html` for content
-   - Edit `style.css` for styling
-   - Refresh browser to see changes
+End-to-end processing takes 2–3 seconds.
 
----
-
-## Image Setup
-
-### Required Images
-
-Place these images in the `images/` folder:
-
-1. **banner.png** (1200 x 200px recommended)
-   - Company logo with tagline
-   - Format: PNG with transparent background preferred
-
-2. **profile.jpg** (400 x 400px minimum)
-   - Professional headshot
-   - Format: JPG or PNG
-   - Square or portrait orientation
-
-### Image Optimization Tips
-
-- **Compress images** before uploading (use [TinyPNG](https://tinypng.com))
-- **Recommended sizes:**
-  - Banner: Max 200KB
-  - Profile: Max 100KB
-- **Formats:**
-  - Use PNG for graphics/logos
-  - Use JPG for photos
+### CRM Email Assistant (E-commerce)
+- Classifies incoming email by urgency and topic
+- Pulls thread history and the customer's CRM record
+- Drafts sentiment-matched replies with few-shot learning
+- Sends drafts to a review queue for staff approval, escalates critical issues to humans, and logs every action in a GDPR-aligned audit trail
 
 ---
 
-## Deployment (GitHub Pages)
+## Six Customisation Dimensions
 
-### Step 1: Upload Files to GitHub
+From the research paper *Architecting & Engineering Production-Grade Agentic AI for Industry-Specific Needs*: every system shares one **agentic core** (LLM + tools + orchestration), adapted along six dimensions.
 
-1. Create `images/` folder in repository
-2. Upload your 3 files:
-   - `index.html`
-   - `style.css`
-   - `README.md`
-3. Upload images to `images/` folder
+| Dimension | Banking | Property | Hotel Review | CRM Email |
+|---|---|---|---|---|
+| **Interaction mode** | Text conversation | Voice-first + text; multilingual | Review feed + dashboard | Email inbox + review queue |
+| **Knowledge source** | Policy documents (retrieval) | Rikanverse listings; renting guidance | Review text; brand-voice examples | Thread history; CRM record; few-shot examples |
+| **Reasoning style** | Multi-agent ReAct loop | ReAct loop with clarifying questions | Four-layer pipeline | Classify-and-draft pipeline |
+| **Compliance layer** | Six-gate FCA + GDPR verification | Response checks | Crisis and compliance detection | GDPR data handling; audit trail |
+| **Integrations** | Tool orchestration (LangChain) | Listings DB (PostgreSQL); speech interface | Approval dashboard (FastAPI, React) | Email + CRM systems |
+| **Automation boundary** | Routine requests automated; risky actions need confirmation and a human | Guidance and listing suggestions automated | Drafts automated; staff approve | Triage and drafts automated; staff approve |
 
-### Step 2: Enable GitHub Pages
+### Design lessons
+1. **Start from the industry, not the model.** Regulation, language and brand voice drove the key decisions.
+2. **Keep a shared core and customise around it.** Reasoning, tools and orchestration are reused; the rest adapts.
+3. **Reuse proven designs across industries.** The review agent and email assistant share one *classify → draft → review* pattern, and banking's gated safety method informs the shared safety core.
+4. **Build compliance in from the start.** In regulated industries, compliance belongs in the core, not bolted on at the end.
 
-1. Go to repository **Settings**
-2. Scroll to **Pages** section (left sidebar)
-3. Under **Source**:
-   - Branch: Select `main`
-   - Folder: Select `/ (root)`
-4. Click **Save**
-5. Wait 2-5 minutes
-
-Your site will be live at:
-`https://rimjhimsinghcoder1.github.io/rimjhimaikingdom/`
-
-### Step 3: Connect Custom Domain
-
-1. In GitHub Pages settings, add custom domain: `rimjhimaikingdom.com`
-2. In Namecheap, add DNS records (already configured!)
-3. Enable "Enforce HTTPS" in GitHub (after DNS propagates)
-4. Wait 15 mins - 2 hours for DNS propagation
+> Implementation details are withheld because the systems are under commercial development.
 
 ---
 
-## 🔧 Customization Guide
+## Publications
 
-### Update Content
+### Agentic AI
+- **Singh, R. (2026).** *Architecting & Engineering Production-Grade Agentic AI for Industry-Specific Needs.* International Journal for Multidisciplinary Research.
+- **Singh, R. (2026).** *Engineering Reliable Agentic AI: Decision-Making in Real-World Deployments.* International Journal for Multidisciplinary Research, 8(6). [DOI: 10.36948/ijfmr.2026.v08i06.91388](https://doi.org/10.36948/ijfmr.2026.v08i06.91388)
 
-**Personal Info:**
-- Edit name, bio, and taglines in `index.html`
-- Search for `RIMJHIM` to find all instances
+### Forthcoming
+- **Fullard, J., Singh, R., & Ventura-Coello, S.** *When the gold standard meets the classroom: Risk of bias and the limits of RCTs in education.* Nature Human Behaviour (in press).
 
-**Links:**
-- Update LinkedIn, GitHub, and website URLs
-- Located in Hero section and Contact section
+### Machine learning and economics
+- **Singh, R. (2024).** *Decoding the Obesity Puzzle in Peru, Colombia, and Mexico.* IJHSSM, 4(6), 409–417. [DOI: 10.5281/zenodo.23871159](https://doi.org/10.5281/zenodo.23871159)
+- **Singh, R. (2024).** *The Puzzle of Economic Development.* IJHSSM, 4(6), 252–259. [DOI: 10.5281/zenodo.23866917](https://doi.org/10.5281/zenodo.23866917)
+- **Singh, R. (2022).** *Multimarket Contacts with Trade Costs and Distance Cost.* JBMIS, 9(1), 1–4. [DOI: 10.48001/jbmis.2022.0901001](https://doi.org/10.48001/jbmis.2022.0901001)
+- **Singh, R. (2022).** *Capital Account Liberalization Debates.* Veethika, 8(4), 16–19. [DOI: 10.48001/veethika.2022.08.04.003](https://doi.org/10.48001/veethika.2022.08.04.003)
+- **Singh, R. (2022).** *An Analysis of the Status and Potential of the Delhi Tourism Industry.* JBMIS, 9(2), 1–10. [DOI: 10.48001/jbmis.2022.0902001](https://doi.org/10.48001/jbmis.2022.0902001)
+- **Singh, R. (2022).** *Curbing Child Labour is the Da Vinci Code of Economic Development.* Veethika, 8(2), 25–28. [DOI: 10.48001/veethika.2022.08.02.006](https://doi.org/10.48001/veethika.2022.08.02.006)
+- **Singh, R. (2021).** *Analyzing the Impact of the Economic Crisis in Greece on the U.S.* JBMIS, 8(2), 18–26. [DOI: 10.48001/jbmis.2021.0802003](https://doi.org/10.48001/jbmis.2021.0802003)
 
-**Projects:**
-- Add project details in Projects section
-- Follow existing HTML structure
+### Books and chapters
+- **Singh, R. (2022).** *Puzzles of Labour Economics.* Eliva Press. ISBN 978-9994984879
+- **Singh, R., & Singh, R. (2016).** *Sport and Anti-Sport: Big Game Hunting in Jim Corbett's India.* In *Sport, Identity and Community*, Brill. Presented at the University of Oxford. [DOI: 10.1163/9781848884526_005](https://doi.org/10.1163/9781848884526_005)
 
-### Update Styling
-
-**Colors:**
-```css
-/* Main colors in style.css */
-Primary Blue: #7eb3d6
-Dark Navy: #1a2332
-Light Gray: #f8f9fa
-```
-
-**Fonts:**
-- Headers: Poppins
-- Body: Inter
-- Change in Google Fonts link if desired
+### Tech articles on Medium
+- Designing Reliable AI Systems: My Engineering Approach Across RAG, Agents, and Real-World Workflows
+- Why Your AI Project Failed and How to Fix It
+- How to Validate AI-Generated Python Code
+- I Built One of the World's First Navigable & Interactive Agentic AI Virtual City Experience Web App!
+- Tired of Writing Docstrings? GitHub Copilot Has You Covered!
 
 ---
 
-## 📱 Browser Support
+## Founder
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+**Rimjhim (Rémy) Singh**: AI Engineer · Technical AI Product Architect · Economist · Founder of Rikanverse® Ltd., London
 
----
+- Sole architect and developer of Rimjhim AI Kingdom; has engineered 10+ AI agents
+- Specialises in agentic AI, LLM automation, NLP, RAG pipelines and scalable ML systems
+- MSc in Behavioural & Data Science, University of Warwick; Master's in Quantitative Economics
+- Google Certified AI Professional
+- Former Senior AI Engineer at a London-based company, architecting enterprise GenAI workflows for startups in 60+ countries
+- Former Assistant Professor; 15+ published research articles
+- Economics Honours, Ramjas College, University of Delhi (Overall Rank 1)
 
-## Performance
-
-- **Lighthouse Score:** 95+ (Performance, Accessibility, SEO)
-- **Load Time:** < 2 seconds (with optimized images)
-- **Mobile Friendly:** Fully responsive
-- **No JavaScript frameworks:** Pure HTML/CSS for speed
+> *"AI isn't just about algorithms. It's about impact. Every solution should solve a real problem, deliver measurable value, and unlock new possibilities."*
 
 ---
-
-## License
-
-This portfolio website is © 2024-2025 Rimjhim Singh. All rights reserved.
-
-**Usage:**
-- Personal use only
-- Do not copy/redistribute without permission
-- Images and content are proprietary
-
 ---
 
-## Connect
-
-- **Personal LinkedIn:** [linkedin.com/in/rimjhim-ri](https://www.linkedin.com/in/rimjhim-ri)
-- **Company LinkedIn:** [linkedin.com/company/rimjhim-ai-kingdom](https://www.linkedin.com/company/rimjhim-ai-kingdom)
-- **GitHub:** [github.com/rimjhimsinghcoder1](https://github.com/rimjhimsinghcoder1)
-- **Location:** London, United Kingdom
-
----
-
-## Notes
-
-
-This website itself serves as a project demonstrating:
-- **Front-end Development** - HTML5, CSS3
-- **Responsive Design** - Mobile-first approach
-- **Version Control** - Git/GitHub
-- **DevOps** - GitHub Pages deployment
-- **DNS Management** - Custom domain configuration
-
-
----
-
-##  Acknowledgments
-
-- Design inspiration from modern portfolio trends
-- Built with precision, powered by curiosity, driven by impact
-- **"Where Knowledge Flows Like Raindrops"** ☔
-
----
- 
-**Version:** 2.0.0  
-**Status:** Live & Active
-
----
-## **Author**
-
-**Rimjhim Singh (Rémy)**  
-AI/ML Engineer | MSc Data Science, University of Warwick  
-5+ years experience in LLM optimization, RAG systems, AI agents
-
-🔗 [LinkedIn](https://linkedin.com/in/rimjhim-ri)  
-💻 [GitHub](https://github.com/rimjhimsinghcoder1)
-
----
-
-## **License**
-
-© 2024-2025 RIMJHIM AI KINGDOM. 
-
----
-
-
-*Built by Rimjhim Singh (Rémy)| RIMJHIM AI KINGDOM*
+<p align="center">
+  <b>RIMJHIM AI KINGDOM</b> © 2025 · Built with precision · Powered by curiosity<br>
+  © 2026 Rikanverse® Ltd., London
+</p>
 
 
 
